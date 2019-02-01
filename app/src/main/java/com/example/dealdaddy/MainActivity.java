@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 import com.squareup.picasso.Picasso;
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
     private ImageView bagImage, navicon;
 
     private CardView cardViewone;
+    private TextView bottomTextView;
+    private View viewLast;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,27 +37,31 @@ public class MainActivity extends AppCompatActivity {
         boysImageView = findViewById(R.id.imageView3);
         kidsImageView = findViewById(R.id.imageView4);
         girlsImageView = findViewById(R.id.imageView6);
-        furnitureImageView =findViewById(R.id.imageView5);
+        furnitureImageView = findViewById(R.id.imageView5);
         bagImage = findViewById(R.id.imageView7);
         navicon = findViewById(R.id.navicon);
+
+        bottomTextView=findViewById(R.id.bottomTextView);
+        viewLast = findViewById(R.id.viewlast);
 
 
         cardViewone = findViewById(R.id.cardView1);
         cardViewone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,DetailActivity.class);
+                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
                 startActivity(intent);
             }
         });
 
-         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_to_left);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_to_left);
         Animation animationNav = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_to_right);
+        Animation animationBottom = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bottom_to_up);
 
         bagImage.startAnimation(animation);
         navicon.startAnimation(animationNav);
-
-
+        viewLast.startAnimation(animationBottom);
+        bottomTextView.startAnimation(animationBottom);
 
 
         String menUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fmenimg.jpg?alt=media&token=2087538c-18e5-4dea-96bd-70c157020a84";
