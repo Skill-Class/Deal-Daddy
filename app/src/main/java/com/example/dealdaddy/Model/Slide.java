@@ -1,10 +1,9 @@
-package com.example.dealdaddy;
+package com.example.dealdaddy.Model;
 
 public class Slide {
 
     private String Image ;
     private String Title;
-    // Add more field depand on whay you wa&nt ...
 
 
     public Slide(String image, String title) {

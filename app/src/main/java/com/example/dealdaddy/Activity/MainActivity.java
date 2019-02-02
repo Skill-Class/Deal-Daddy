@@ -1,4 +1,4 @@
-package com.example.dealdaddy;
+package com.example.dealdaddy.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.example.dealdaddy.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

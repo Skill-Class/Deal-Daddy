@@ -1,6 +1,7 @@
-package com.example.dealdaddy;
+package com.example.dealdaddy.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
@@ -8,6 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.dealdaddy.Activity.DetailsWithGridActivity;
+import com.example.dealdaddy.R;
+import com.example.dealdaddy.Model.Slide;
 
 import java.util.List;
 
@@ -33,6 +38,14 @@ public class SliderPagerAdapter extends PagerAdapter {
 
         ImageView slideImg = slideLayout.findViewById(R.id.slide_img);
         TextView slideText = slideLayout.findViewById(R.id.slide_title);
+
+        slideImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, DetailsWithGridActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
        // slideImg.setImageResource(mList.get(position).getImage().toString());
         slideText.setText(mList.get(position).getTitle());
 

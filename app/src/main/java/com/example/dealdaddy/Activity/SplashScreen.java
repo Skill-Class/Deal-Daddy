@@ -1,4 +1,4 @@
-package com.example.dealdaddy;
+package com.example.dealdaddy.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.dealdaddy.Activity.MainActivity;
+import com.example.dealdaddy.R;
 
 public class SplashScreen extends AppCompatActivity {
 
