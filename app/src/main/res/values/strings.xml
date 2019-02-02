@@ -1,14 +1,8 @@
 <resources>
     <string name="app_name">DealDaddy</string>
     <string name="shortText">\"Always dress like you\'re going to see your worst enemy.\"  \n <b><i>Kimora Lee</i></b></string>
-    <string name="imageone"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fmenimg.jpg?alt=media&token=2087538c-18e5-4dea-96bd-70c157020a84]]></string>
-    <string name="imagetwo"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fmarcus-loke-751530-unsplash.jpg?alt=media&token=407d0b24-f24a-4a33-a4f8-4dc4bb82c347]]></string>
-    <string name="imagethree"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fann-danilina-671900-unsplash.jpg?alt=media&token=d8a12241-ceb1-42ca-97a8-f6d510d3aded]]></string>
-    <string name="imagefour"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fjanko-ferlic-284664-unsplash.jpg?alt=media&token=2ccc0c14-fcc2-4408-9a1a-535574fbd1c9]]></string>
-    <string name="imagefive"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fsharon-garcia-498810-unsplash.jpg?alt=media&token=716005bd-9972-4053-9fd7-43687be09c22]]></string>
-    <string name="imagesix"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fnathan-fertig-249917-unsplash.jpg?alt=media&token=4c210b3e-43a4-4d7e-b633-2bc57ac63d1c]]></string>
-    <string name="imageseven"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fann-danilina-671900-unsplash.jpg?alt=media&token=d8a12241-ceb1-42ca-97a8-f6d510d3aded]]></string>
-    <string name="imageeight"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fjanko-ferlic-284664-unsplash.jpg?alt=media&token=2ccc0c14-fcc2-4408-9a1a-535574fbd1c9]]></string>
-    <string name="imagenine"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fsharon-garcia-498810-unsplash.jpg?alt=media&token=716005bd-9972-4053-9fd7-43687be09c22]]></string>
-    <string name="imageten"><![CDATA[https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fnathan-fertig-249917-unsplash.jpg?alt=media&token=4c210b3e-43a4-4d7e-b633-2bc57ac63d1c]]></string>
+
+    <string name="itemone"><b>WOGON</b> Men Navy Blue Printed Round Neck T-shirt \n\n\u20B9 699 (50% OFF) \nAdditional tax may apply; charged at checkout</string>
+    <string name="itemonenext"><b>Best Price : \u20B9 686 </b>\nApplicable on : Order above Rs. 1799\nCoupon Code : SAVE5\nMax Discount : 51% of MRP (Your total svaing : Rs. 713, excluding tax \n\n\n<b>Flat 200 cashback on Airtel Payments Bank\n</b>Min spend Rs 2,000; for first time transaction. TCA\n\n\n<b>10% SuperCash on MobiKwik</b>\nMax SuperCash Rs 250. TCA\n\n\n<b>EMI option available</b>\nEMI starting from Rs.33/month</string>
+    <string name="itemonenext1"><b>Easy 30 days returns and 30 days exchanges</b>\nChoose to return within 30 days or exchange within 30 days.</string>
 </resources>
