@@ -1,6 +1,7 @@
 package com.example.dealdaddy.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.dealdaddy.Activity.AboutItemActivity;
 import com.example.dealdaddy.Model.Items;
 import com.example.dealdaddy.R;
 
@@ -62,6 +64,14 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
 
             }
         });
+
+        holder.modelImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, AboutItemActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,7 +99,7 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView priceText;
-        ImageView favImageView;
+        ImageView favImageView,modelImage;
 
         // CardView cardView ;
 
@@ -99,6 +109,7 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
             priceText = (TextView) itemView.findViewById(R.id.textView9);
             favImageView = itemView.findViewById(R.id.imageView10);
 
+            modelImage = itemView.findViewById(R.id.imageView9);
 
             // String text = "\\u20B9 1245  \\u20B9 2490 (50% Off)";
 
