@@ -16,6 +16,13 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+
+/*
+        @Date - 4 feb 2019
+        @author - Sheetal Kumar
+
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<String> mImageUrls = new ArrayList<>();
@@ -26,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private CardView cardViewone;
     private TextView bottomTextView;
     private View viewLast;
-   
+
 
 
     @Override
