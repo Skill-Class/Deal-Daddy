@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.AboutItemActivity"></activity>
+        <activity android:name=".Activity.OrderConfirmActivity"></activity>
+        <activity android:name=".Activity.AboutItemActivity" />
         <activity android:name=".Activity.DetailsWithGridActivity" />
         <activity android:name=".Activity.SplashScreen">
             <intent-filter>
