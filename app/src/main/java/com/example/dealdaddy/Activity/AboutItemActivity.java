@@ -1,11 +1,13 @@
 package com.example.dealdaddy.Activity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.dealdaddy.Adapter.RecyclerViewAdapterForItemsDetails;
@@ -18,6 +20,7 @@ import java.util.List;
 public class AboutItemActivity extends AppCompatActivity {
 
     private ImageView BackBtn;
+    private Button bagButton;
 
     private List<Items> itemsDetails;
 
@@ -27,6 +30,19 @@ public class AboutItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about_item);
 
         BackBtn = findViewById(R.id.navicon);
+        bagButton = findViewById(R.id.button);
+
+        bagButton.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
+            @Override
+            public void onClick(View v) {
+                bagButton.setText("VIEW BAG");
+                bagButton.setBackgroundColor(R.color.colorAccent);
+
+                Intent intent =new Intent(AboutItemActivity.this,OrderConfirmActivity.class);
+                startActivity(intent);
+            }
+        });
 
         BackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
