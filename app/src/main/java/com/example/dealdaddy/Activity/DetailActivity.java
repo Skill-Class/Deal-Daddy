@@ -82,64 +82,64 @@ public class DetailActivity extends AppCompatActivity {
         itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new Items("Levis", "Men Regular FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Roadster", "Men Skinny Fit Jeans",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Wrangler", "Men Skinny Fit Jeans",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("United Colors of Benetton", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("WROGN", "Men Regular Fit Joggers",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Mast & Harbour", "Men Slim FIt Chinos",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Nike", "Men Air Force 1 HIGH Sneakers",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Mast & Harbour", "Men Sneakers",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Nike", "Men Running Shoes",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Peter England", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Reebok", "Men Stride Slip On Running",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new Items("Reebok", "Hurtle Running Shoes",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Levis", "Men Skinny Fit Jeans",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new Items("Peter England", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new Items("Wrangler", "Men Regular Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new Items("Titan", "Men Dial Watch",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new Items("Nautica", "Men Deodrant & Perfume Set",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new Items("Fossil", "Men Analogue Watch",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
 
