@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.dealdaddy.Model.Items;
+import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 import com.example.dealdaddy.Adapter.RecyclerViewAdapterForItemsDetails;
 import com.example.dealdaddy.Model.Slide;
@@ -29,7 +30,7 @@ public class DetailActivity extends AppCompatActivity {
     private TabLayout indicator;
     private ImageView BackBtn;
 
-    private List<Items> itemsDetails;
+    private List<ItemsWithImage> itemsDetails;
 
 
     @Override
@@ -64,12 +65,12 @@ public class DetailActivity extends AppCompatActivity {
         String funitureUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fnathan-fertig-249917-unsplash.jpg?alt=media&token=4c210b3e-43a4-4d7e-b633-2bc57ac63d1c";
 
 
-        lstSlides.add(new Slide(menUrl, "HIGHLANDER \nUp to 70% Off"));
-        lstSlides.add(new Slide(womelUrl, "Tiptoeing Into The Weekend! \nMIN. 40% OFF"));
-        lstSlides.add(new Slide(kidsUrl, "FRENCH CONNECTION \nGame-Changing Picks At 40-70% Off"));
-        lstSlides.add(new Slide(boysUrl, "The Tracks & Tee Look \nMin. 50% Off"));
-        lstSlides.add(new Slide(girlUrl, "Stylish Watches \nEnjoy Up To 40% Off On"));
-        lstSlides.add(new Slide(funitureUrl, "Sportswear To Keep You Fit & Fab ! \nMin. 30% Off"));
+        lstSlides.add(new Slide(R.drawable.pic2, "HIGHLANDER \nUp to 70% Off"));
+        lstSlides.add(new Slide(R.drawable.pic8, "Tiptoeing Into The Weekend! \nMIN. 40% OFF"));
+        lstSlides.add(new Slide(R.drawable.pic7, "FRENCH CONNECTION \nGame-Changing Picks At 40-70% Off"));
+        lstSlides.add(new Slide(R.drawable.pic3, "The Tracks & Tee Look \nMin. 50% Off"));
+        lstSlides.add(new Slide(R.drawable.pic4, "Stylish Watches \nEnjoy Up To 40% Off On"));
+        lstSlides.add(new Slide(R.drawable.pic7, "Sportswear To Keep You Fit & Fab ! \nMin. 30% Off"));
 
 
         SliderPagerAdapter adapter = new SliderPagerAdapter(this, lstSlides);
@@ -79,68 +80,31 @@ public class DetailActivity extends AppCompatActivity {
 
         itemsDetails = new ArrayList<>();
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic4,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Wrangler", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("United Colors of Benetton", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic6,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("WROGN", "Men Regular Fit Joggers",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic7,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Mast & Harbour", "Men Slim FIt Chinos",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Nike", "Men Air Force 1 HIGH Sneakers",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Mast & Harbour", "Men Sneakers",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Nike", "Men Running Shoes",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Peter England", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Reebok", "Men Stride Slip On Running",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Reebok", "Hurtle Running Shoes",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Levis", "Men Skinny Fit Jeans",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Peter England", "Men Regular FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Wrangler", "Men Regular Fit Jeans",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Titan", "Men Dial Watch",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Nautica", "Men Deodrant & Perfume Set",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new Items("Fossil", "Men Analogue Watch",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
 
 

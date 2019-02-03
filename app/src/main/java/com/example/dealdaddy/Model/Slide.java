@@ -2,17 +2,17 @@ package com.example.dealdaddy.Model;
 
 public class Slide {
 
-    private String Image ;
+    private Integer Image ;
     private String Title;
 
 
-    public Slide(String image, String title) {
+    public Slide(Integer image, String title) {
         Image = image;
         Title = title;
     }
 
 
-    public String getImage() {
+    public Integer getImage() {
         return Image;
     }
 
@@ -20,7 +20,7 @@ public class Slide {
         return Title;
     }
 
-    public void setImage(String image) {
+    public void setImage(Integer image) {
         Image = image;
     }
 

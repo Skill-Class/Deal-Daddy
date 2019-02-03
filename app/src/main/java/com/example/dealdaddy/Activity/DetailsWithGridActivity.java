@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.example.dealdaddy.Model.Items;
+import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 import com.example.dealdaddy.Adapter.RecyclerViewAdapterForItems;
 
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class DetailsWithGridActivity extends AppCompatActivity {
 
-    private List<Items> itemsDetails;
+    private List<ItemsWithImage> itemsDetails;
     private ImageView BackBtn;
 
     @Override
@@ -40,67 +41,75 @@ public class DetailsWithGridActivity extends AppCompatActivity {
 
         itemsDetails = new ArrayList<>();
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Wrangler", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("United Colors of Benetton", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("WROGN", "Men Regular Fit Joggers",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Mast & Harbour", "Men Slim FIt Chinos",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Nike", "Men Air Force 1 HIGH Sneakers",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Mast & Harbour", "Men Sneakers",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Nike", "Men Running Shoes",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Peter England", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Reebok", "Men Stride Slip On Running",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Reebok", "Hurtle Running Shoes",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Levis", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Peter England", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Wrangler", "Men Regular Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Titan", "Men Dial Watch",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Nautica", "Men Deodrant & Perfume Set",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new Items("Fossil", "Men Analogue Watch",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
 

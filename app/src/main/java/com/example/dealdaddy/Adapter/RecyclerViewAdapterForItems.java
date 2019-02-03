@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.dealdaddy.Activity.AboutItemActivity;
 import com.example.dealdaddy.Model.Items;
+import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 
 import java.util.List;
@@ -19,10 +20,10 @@ import java.util.List;
 public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerViewAdapterForItems.MyViewHolder> {
 
     private Context mContext;
-    private List<Items> mData;
+    private List<ItemsWithImage> mData;
 
 
-    public RecyclerViewAdapterForItems(Context mContext, List<Items> mData) {
+    public RecyclerViewAdapterForItems(Context mContext, List<ItemsWithImage> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -74,6 +75,8 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
         });
 
         holder.companyName.setText(mData.get(position).getCompanyName());
+
+        holder.modelImage.setImageResource(mData.get(position).getProductImage());
 
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
