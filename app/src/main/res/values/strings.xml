@@ -12,4 +12,6 @@
     <string name="itemonenext6"><b>MORE INFORMATION</b>\nProduct Code : 208921\n\nSold by : <b>Fashion Tech</b>\nTax : Applicable tax on the basis of exact location and discount will be charged at the time of checkout \n\n<b>Manufacturer Detail</b>\nTommy Hilfiger Arvind Fashion Pvt. Ltd, No. 4, Bruton 1st Cross Road Banglore-560025<b>\n\nCountry of Origin\n</b>CHINA</string>
     <string name="lastString">\"Clothes mean nothing until someone lives in them.\" \n  <b>Marc Jacobs</b></string>
     <string name="title_activity_order_confim">OrderConfimActivity</string>
+    <string name="orderSummery">Total MRP\n\nBag discount\n\nEstimate Tex\n\nCoupon Discount\n\nDelivery Charges</string>
+    <string name="priceString">  \u20B9 11,097\n\n-\u20B9 11,097\n\n \u20B9 543\n\n Apply Coupon\n\n FREE</string>
 </resources>
