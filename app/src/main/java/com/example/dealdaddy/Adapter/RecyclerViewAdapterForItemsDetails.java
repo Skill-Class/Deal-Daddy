@@ -74,6 +74,8 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
             }
         });
 
+        holder.companyName.setText(mData.get(position).getCompanyName());
+
        // holder.modelImage.setBackground(mData.get(position).getimg());
 
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -102,7 +104,7 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView priceText;
+        TextView priceText,companyName;
         ImageView favImageView,modelImage;
 
         // CardView cardView ;
@@ -112,6 +114,7 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
 
             priceText = (TextView) itemView.findViewById(R.id.textView9);
             favImageView = itemView.findViewById(R.id.imageView10);
+            companyName = itemView.findViewById(R.id.textView7);
             modelImage = itemView.findViewById(R.id.imageView9);
 
             // String text = "\\u20B9 1245  \\u20B9 2490 (50% Off)";
