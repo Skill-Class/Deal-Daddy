@@ -72,6 +72,9 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
                 mContext.startActivity(intent);
             }
         });
+
+        holder.companyName.setText(mData.get(position).getCompanyName());
+
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -98,7 +101,7 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView priceText;
+        TextView priceText,companyName;
         ImageView favImageView,modelImage;
 
         // CardView cardView ;
@@ -108,7 +111,7 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
 
             priceText = (TextView) itemView.findViewById(R.id.textView9);
             favImageView = itemView.findViewById(R.id.imageView10);
-
+            companyName = itemView.findViewById(R.id.textView7);
             modelImage = itemView.findViewById(R.id.imageView9);
 
             // String text = "\\u20B9 1245  \\u20B9 2490 (50% Off)";
