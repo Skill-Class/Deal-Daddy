@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.dealdaddy.Activity.AboutItemActivity;
 import com.example.dealdaddy.Model.Items;
+import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 
 import java.util.List;
@@ -18,10 +19,10 @@ import java.util.List;
 public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<RecyclerViewAdapterForItemsDetails.MyViewHolder> {
 
     private Context mContext;
-    private List<Items> mData;
+    private List<ItemsWithImage> mData;
 
 
-    public RecyclerViewAdapterForItemsDetails(Context mContext, List<Items> mData) {
+    public RecyclerViewAdapterForItemsDetails(Context mContext, List<ItemsWithImage> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -66,6 +67,7 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
             }
         });
 
+        holder.modelImage.setImageResource(mData.get(position).getProductImage());
         holder.modelImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

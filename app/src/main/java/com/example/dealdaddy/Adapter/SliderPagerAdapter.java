@@ -46,7 +46,7 @@ public class SliderPagerAdapter extends PagerAdapter {
                 mContext.startActivity(intent);
             }
         });
-       // slideImg.setImageResource(mList.get(position).getImage().toString());
+      //  slideImg.setImageResource(mList.get(position).getImage());
         slideText.setText(mList.get(position).getTitle());
 
         container.addView(slideLayout);
