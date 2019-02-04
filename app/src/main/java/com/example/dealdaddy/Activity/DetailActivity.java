@@ -54,7 +54,7 @@ public class DetailActivity extends AppCompatActivity {
         sliderpager = findViewById(R.id.slider_pager);
         indicator = findViewById(R.id.indicator);
 
-        itemsDetails = new ArrayList<>();
+       // itemsDetails = new ArrayList<>();
 
 
         String menUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fmenimg.jpg?alt=media&token=2087538c-18e5-4dea-96bd-70c157020a84";
@@ -66,11 +66,11 @@ public class DetailActivity extends AppCompatActivity {
 
 
         lstSlides.add(new Slide(R.drawable.pic2, "HIGHLANDER \nUp to 70% Off"));
-        lstSlides.add(new Slide(R.drawable.pic8, "Tiptoeing Into The Weekend! \nMIN. 40% OFF"));
-        lstSlides.add(new Slide(R.drawable.pic7, "FRENCH CONNECTION \nGame-Changing Picks At 40-70% Off"));
+       // lstSlides.add(new Slide(R.drawable.pic8, "Tiptoeing Into The Weekend! \nMIN. 40% OFF"));
+        //lstSlides.add(new Slide(R.drawable.pic7, "FRENCH CONNECTION \nGame-Changing Picks At 40-70% Off"));
         lstSlides.add(new Slide(R.drawable.pic3, "The Tracks & Tee Look \nMin. 50% Off"));
         lstSlides.add(new Slide(R.drawable.pic4, "Stylish Watches \nEnjoy Up To 40% Off On"));
-        lstSlides.add(new Slide(R.drawable.pic7, "Sportswear To Keep You Fit & Fab ! \nMin. 30% Off"));
+       // lstSlides.add(new Slide(R.drawable.pic7, "Sportswear To Keep You Fit & Fab ! \nMin. 30% Off"));
 
 
         SliderPagerAdapter adapter = new SliderPagerAdapter(this, lstSlides);
@@ -92,11 +92,11 @@ public class DetailActivity extends AppCompatActivity {
         itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic6,"BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+      //  itemsDetails.add(new ItemsWithImage(R.drawable.pic6,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        //        "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic7,"BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+       // itemsDetails.add(new ItemsWithImage(R.drawable.pic7,"BlackBerrys", "Men Slim FIt Casual Shirt",
+         //       "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
