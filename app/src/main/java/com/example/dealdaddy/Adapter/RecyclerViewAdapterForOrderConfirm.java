@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.dealdaddy.Activity.AboutItemActivity;
 import com.example.dealdaddy.Model.Items;
+import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 
 import java.util.List;
@@ -18,10 +19,10 @@ import java.util.List;
 public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<RecyclerViewAdapterForOrderConfirm.MyViewHolder> {
 
     private Context mContext;
-    private List<Items> mData;
+    private List<ItemsWithImage> mData;
 
 
-    public RecyclerViewAdapterForOrderConfirm(Context mContext, List<Items> mData) {
+    public RecyclerViewAdapterForOrderConfirm(Context mContext, List<ItemsWithImage> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -39,7 +40,7 @@ public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<Rec
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
 
 
-       // holder.modelImage.setBackground(mData.get(position).getimg());
+        holder.modelImage.setImageResource(mData.get(position).getProductImage());
 
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,7 +78,7 @@ public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<Rec
 
            // priceText = (TextView) itemView.findViewById(R.id.textView9);
             //favImageView = itemView.findViewById(R.id.imageView10);
-           // modelImage = itemView.findViewById(R.id.imageView9);
+            modelImage = itemView.findViewById(R.id.imageView9);
 
             // String text = "\\u20B9 1245  \\u20B9 2490 (50% Off)";
 
