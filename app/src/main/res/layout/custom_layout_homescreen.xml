@@ -9,7 +9,7 @@
     android:layout_marginRight="8dp"
     android:layout_marginBottom="8dp"
 
-    android:background="#f1f1f1"
+    android:background="@color/colorAccent"
     android:elevation="5dp"
     android:padding="10dp">
 
@@ -37,6 +37,7 @@
         android:layout_marginRight="8dp"
         android:fontFamily="@font/ovo"
         android:text="Men"
+android:textColor="#f1f1f1"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView8"
@@ -56,6 +57,7 @@
         android:fontFamily="@font/ovo"
         android:text="Men Slim Fit Casual Shirt"
         android:textSize="14sp"
+        android:textColor="#f1f1f1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -80,11 +82,10 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_marginTop="16dp"
-        android:background="#f1f1f1"
-        android:elevation="10dp"
+        android:elevation="16dp"
         android:padding="16dp"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8">
@@ -104,10 +105,11 @@
             android:id="@+id/textView81"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView91" />
@@ -121,7 +123,7 @@
             android:layout_marginTop="4dp"
             android:elevation="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pic4"
+            android:src="@drawable/pic2"
             app:layout_constraintStart_toEndOf="@+id/imageView91"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -135,6 +137,7 @@
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView911"
@@ -149,7 +152,7 @@
             android:layout_marginTop="4dp"
             android:elevation="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pic9"
+            android:src="@drawable/pic3"
             app:layout_constraintStart_toEndOf="@+id/imageView911"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -163,6 +166,7 @@
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView811"
             app:layout_constraintTop_toBottomOf="@+id/imageView9111"
@@ -177,7 +181,7 @@
             android:layout_marginTop="4dp"
             android:elevation="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pic2"
+            android:src="@drawable/pic9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView9111"
             app:layout_constraintTop_toTopOf="parent" />
@@ -192,6 +196,7 @@
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView8111"
             app:layout_constraintStart_toEndOf="@+id/textView81"
