@@ -9,20 +9,19 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dealdaddy.Activity.AboutItemActivity;
-import com.example.dealdaddy.Model.Items;
+import com.example.dealdaddy.Activity.DetailActivity;
 import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 
 import java.util.List;
 
-public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<RecyclerViewAdapterForOrderConfirm.MyViewHolder> {
+public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<RecyclerViewAdapterForHomeScreen.MyViewHolder> {
 
     private Context mContext;
     private List<ItemsWithImage> mData;
 
 
-    public RecyclerViewAdapterForOrderConfirm(Context mContext, List<ItemsWithImage> mData) {
+    public RecyclerViewAdapterForHomeScreen(Context mContext, List<ItemsWithImage> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -32,7 +31,7 @@ public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<Rec
 
         View view;
         LayoutInflater mInflater = LayoutInflater.from(mContext);
-        view = mInflater.inflate(R.layout.custom_layout_for_orderconfirm, parent, false);
+        view = mInflater.inflate(R.layout.custom_layout_homescreen, parent, false);
         return new MyViewHolder(view);
     }
 
@@ -41,7 +40,15 @@ public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<Rec
 
 
         holder.modelImage.setImageResource(mData.get(position).getProductImage());
+        holder.companyName.setText(mData.get(position).getCompanyName());
 
+        holder.modelImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, DetailActivity.class);
+                mContext.startActivity(intent);
+            }
+        });
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +75,7 @@ public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<Rec
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView priceText;
+        TextView priceText,companyName;
         ImageView favImageView,modelImage;
 
         // CardView cardView ;
@@ -79,6 +86,7 @@ public class RecyclerViewAdapterForOrderConfirm extends RecyclerView.Adapter<Rec
            // priceText = (TextView) itemView.findViewById(R.id.textView9);
             //favImageView = itemView.findViewById(R.id.imageView10);
             modelImage = itemView.findViewById(R.id.imageView9);
+            companyName = itemView.findViewById(R.id.textView7);
 
             // String text = "\\u20B9 1245  \\u20B9 2490 (50% Off)";
 

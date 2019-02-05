@@ -97,13 +97,13 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="35dp"
+        android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:background="@drawable/bag_background_top"
         android:padding="8dp"
-        android:src="@drawable/ic_shopping_bag"
+        android:src="@drawable/ic_icon_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

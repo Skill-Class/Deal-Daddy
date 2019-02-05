@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -11,10 +13,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.example.dealdaddy.Adapter.RecyclerViewAdapterForHomeScreen;
+import com.example.dealdaddy.Adapter.RecyclerViewAdapterForItemsDetails;
+import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /*
@@ -34,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView bottomTextView;
     private View viewLast;
 
+    private List<ItemsWithImage> itemsDetails;
 
 
     @Override
@@ -41,17 +48,41 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        menImageView = findViewById(R.id.imageView1);
-        womenImageView = findViewById(R.id.imageView2);
-        boysImageView = findViewById(R.id.imageView3);
-        kidsImageView = findViewById(R.id.imageView4);
-        girlsImageView = findViewById(R.id.imageView6);
-        furnitureImageView = findViewById(R.id.imageView5);
+
+        itemsDetails = new ArrayList<>();
+
         bagImage = findViewById(R.id.imageView7);
         navicon = findViewById(R.id.navicon);
-
-        bottomTextView=findViewById(R.id.bottomTextView);
+        bottomTextView = findViewById(R.id.bottomTextView);
         viewLast = findViewById(R.id.viewlast);
+
+        /*
+        Here
+        Company name = Categories
+         */
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2, "Men", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Women", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic4, "Kids", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Furniture", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        //menImageView = findViewById(R.id.imageView1);
+        //womenImageView = findViewById(R.id.imageView2);
+        //boysImageView = findViewById(R.id.imageView3);
+        //kidsImageView = findViewById(R.id.imageView4);
+        // girlsImageView = findViewById(R.id.imageView6);
+        //  furnitureImageView = findViewById(R.id.imageView5);
+
+
+      /*
+
 
 
         cardViewone = findViewById(R.id.cardView1);
@@ -63,14 +94,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_to_left);
-        Animation animationNav = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_to_right);
-        Animation animationBottom = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bottom_to_up);
 
-        bagImage.startAnimation(animation);
-        navicon.startAnimation(animationNav);
-        viewLast.startAnimation(animationBottom);
-        bottomTextView.startAnimation(animationBottom);
 
 
         String menUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fmenimg.jpg?alt=media&token=2087538c-18e5-4dea-96bd-70c157020a84";
@@ -103,6 +127,26 @@ public class MainActivity extends AppCompatActivity {
         Picasso.with(this)
                 .load(funitureUrl)
                 .into(furnitureImageView);
+
+                */
+
+
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_to_left);
+        Animation animationNav = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_to_right);
+        Animation animationBottom = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bottom_to_up);
+
+        bagImage.startAnimation(animation);
+        navicon.startAnimation(animationNav);
+        viewLast.startAnimation(animationBottom);
+        bottomTextView.startAnimation(animationBottom);
+
+        RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerViewAdapterForHomeScreen myAdapter = new RecyclerViewAdapterForHomeScreen(this, itemsDetails);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+
+        myrv.setLayoutManager(layoutManager);
+        myrv.setAdapter(myAdapter);
 
     }
 }
