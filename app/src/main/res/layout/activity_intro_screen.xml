@@ -152,7 +152,7 @@
             android:layout_marginTop="4dp"
             android:elevation="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pic4"
+            android:src="@drawable/womenmodel1"
             app:layout_constraintStart_toEndOf="@+id/imageView91"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -183,7 +183,7 @@
             android:layout_marginTop="4dp"
             android:elevation="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pic9"
+            android:src="@drawable/kid3"
             app:layout_constraintStart_toEndOf="@+id/imageView911"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -210,7 +210,7 @@
             android:layout_marginTop="4dp"
             android:elevation="5dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/pic2"
+            android:src="@drawable/furniture3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView9111"
             app:layout_constraintTop_toTopOf="parent" />

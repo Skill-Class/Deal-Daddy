@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView bottomTextView;
     private View viewLast;
 
-    private List<ItemsWithImage> itemsDetails;
+  //  private List<ItemsWithImage> itemsDetails;
     private List<ItemForHomeImages> itemForHomeImages;
 
     private List<ItemsWithImageArrayList> itemsWithImageArrayLists;
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        itemsDetails = new ArrayList<>();
+       // itemsDetails = new ArrayList<>();
         itemForHomeImages = new ArrayList<>();
         itemsWithImageArrayLists = new ArrayList<>();
 
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel1,R.drawable.womenmodel1,R.drawable.kid3,R.drawable.furniture1));
         itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel2,R.drawable.womenmodel2,R.drawable.kid4,R.drawable.furniture3));
         itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel3,R.drawable.womenmodel3,R.drawable.kid5,R.drawable.furniture4));
-        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel4,R.drawable.womenmodel4,R.drawable.kid4,R.drawable.furniture5));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.pic2,R.drawable.womenmodel4,R.drawable.kid4,R.drawable.furniture5));
 
 
         itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages,R.drawable.menmodel4,"Men","Men Slim Fit Casual Shirt","hello",false));

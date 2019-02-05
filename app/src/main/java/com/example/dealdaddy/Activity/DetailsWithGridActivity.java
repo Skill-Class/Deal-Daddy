@@ -31,8 +31,8 @@ public class DetailsWithGridActivity extends AppCompatActivity {
         BackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailsWithGridActivity.this, DetailActivity.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(DetailsWithGridActivity.this, DetailActivity.class);
+                startActivity(intent1);
             }
         });
 
