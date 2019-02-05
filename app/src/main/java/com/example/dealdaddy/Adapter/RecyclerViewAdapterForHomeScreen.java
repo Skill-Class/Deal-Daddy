@@ -2,6 +2,7 @@ package com.example.dealdaddy.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,6 +48,19 @@ public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<Recyc
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, DetailActivity.class);
                 mContext.startActivity(intent);
+            }
+        });
+
+        holder.modelImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext,DetailActivity.class);
+
+                Bundle bundle = new Bundle();
+                bundle.putString("ModelType",mData.get(position).getCompanyName());
+                bundle.putInt("ModelImage",mData.get(position).getProductImage());
+                intent.putExtras(bundle);
+
             }
         });
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {

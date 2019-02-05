@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.dealdaddy.Model.Items;
 import com.example.dealdaddy.Model.ItemsWithImage;
@@ -30,6 +31,8 @@ public class DetailActivity extends AppCompatActivity {
     private TabLayout indicator;
     private ImageView BackBtn;
 
+    private TextView dealDaddyText;
+
     private List<ItemsWithImage> itemsDetails;
 
 
@@ -37,6 +40,8 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
+        dealDaddyText = findViewById(R.id.dealDaddyText);
 
 
         BackBtn = findViewById(R.id.navicon);
@@ -49,6 +54,12 @@ public class DetailActivity extends AppCompatActivity {
             }
         });
 
+        // fetching data from homescreen activity
+        Bundle bundle = getIntent().getExtras();
+        String ModelCat = bundle.getString("ModelType");
+        Integer ModelImage = bundle.getInt("ModelImage");
+
+        dealDaddyText.setText(ModelCat);
 
         lstSlides = new ArrayList<>();
         sliderpager = findViewById(R.id.slider_pager);
@@ -80,17 +91,29 @@ public class DetailActivity extends AppCompatActivity {
 
         itemsDetails = new ArrayList<>();
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic4,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
 
       //  itemsDetails.add(new ItemsWithImage(R.drawable.pic6,"BlackBerrys", "Men Slim FIt Casual Shirt",
         //        "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
@@ -98,11 +121,6 @@ public class DetailActivity extends AppCompatActivity {
        // itemsDetails.add(new ItemsWithImage(R.drawable.pic7,"BlackBerrys", "Men Slim FIt Casual Shirt",
          //       "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
 
 
