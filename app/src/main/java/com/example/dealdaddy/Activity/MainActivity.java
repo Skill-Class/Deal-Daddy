@@ -61,16 +61,16 @@ public class MainActivity extends AppCompatActivity {
         Company name = Categories
          */
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2, "Men", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1, "Men", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Women", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.womenmodel1, "Women", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic4, "Kids", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.kid3, "Kids", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Furniture", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.furniture1, "Furniture", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         //menImageView = findViewById(R.id.imageView1);
