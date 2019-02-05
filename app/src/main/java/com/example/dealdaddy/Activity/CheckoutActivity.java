@@ -82,11 +82,11 @@ public class CheckoutActivity extends AppCompatActivity {
                                    "\n" +
                                    "From all of us at DealDaddy, welcome to our family! Thank you so much for your purchase of And Then There Were None. It’s a classic platform, and we’re sure you’ll love it!\n" +
                                    "\n" +
-                                   "We’re a small E-commerce group and we stand by all of our titles. That means if you don’t like the product, you can trade it for any other product in our store. Just send your reply to feedback@deaddaddy.com and we’ll get everything sorted out.\n" +
+                                   "We’re a small E-commerce group and we stand by all of our titles. That means if you don’t like the product, you can trade it for any other product in our store. Just send your reply to feedback@dealdaddy.com and we’ll get everything sorted out.\n" +
                                    "\n" +
                                    "Thank you again for choosing DealDaddy, we hope to hear from you again soon!\n" +
                                    "\n" +
-                                   "- Team DeadDaddy");
+                                   "- Team DealDaddy");
 
                        }
                    }
