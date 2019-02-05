@@ -9,7 +9,7 @@
     android:layout_marginRight="8dp"
     android:layout_marginBottom="8dp"
 
-    android:background="@color/colorAccent"
+    android:background="#f1f1f1"
     android:elevation="5dp"
     android:padding="10dp">
 
@@ -37,7 +37,7 @@
         android:layout_marginRight="8dp"
         android:fontFamily="@font/ovo"
         android:text="Men"
-android:textColor="#f1f1f1"
+android:textColor="@color/colorAccent"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView8"
@@ -57,7 +57,7 @@ android:textColor="#f1f1f1"
         android:fontFamily="@font/ovo"
         android:text="Men Slim Fit Casual Shirt"
         android:textSize="14sp"
-        android:textColor="#f1f1f1"
+        android:textColor="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

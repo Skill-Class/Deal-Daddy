@@ -1,6 +1,8 @@
 package com.example.dealdaddy.Activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.support.v4.BuildConfig;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,9 +43,16 @@ public class IntroScreen extends AppCompatActivity {
 
         shareImageView.startAnimation(animation);
         logoImageView.startAnimation(animationNav);
-     //   startbtn.startAnimation(animationBottom);
+        //   startbtn.startAnimation(animationBottom);
         learnTextView.startAnimation(animationBottom);
         checkBox.startAnimation(animationBottom);
+
+        shareImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareApp();
+            }
+        });
 
         startbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,5 +62,20 @@ public class IntroScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void shareApp() {
+        try {
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "DealDaddy");
+            String shareMessage = "\nLet me recommend you this application\n\n";
+            //shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
+            shareMessage = "Dealdaddy is a super cool app.";
+            shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+            startActivity(Intent.createChooser(shareIntent, "Please select your option"));
+        } catch (Exception e) {
+            //e.toString();
+        }
     }
 }
