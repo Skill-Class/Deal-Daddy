@@ -59,7 +59,11 @@ public class DetailActivity extends AppCompatActivity {
         String ModelCat = bundle.getString("ModelType");
         Integer ModelImage = bundle.getInt("ModelImage");
 
-        dealDaddyText.setText(ModelCat);
+        if(ModelCat !=null){
+            dealDaddyText.setText(ModelCat);
+        }else{
+            return;
+        }
 
         lstSlides = new ArrayList<>();
         sliderpager = findViewById(R.id.slider_pager);

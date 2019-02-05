@@ -15,7 +15,9 @@ import android.widget.TextView;
 
 import com.example.dealdaddy.Adapter.RecyclerViewAdapterForHomeScreen;
 import com.example.dealdaddy.Adapter.RecyclerViewAdapterForItemsDetails;
+import com.example.dealdaddy.Model.ItemForHomeImages;
 import com.example.dealdaddy.Model.ItemsWithImage;
+import com.example.dealdaddy.Model.ItemsWithImageArrayList;
 import com.example.dealdaddy.R;
 import com.squareup.picasso.Picasso;
 
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
     private View viewLast;
 
     private List<ItemsWithImage> itemsDetails;
+    private List<ItemForHomeImages> itemForHomeImages;
+
+    private List<ItemsWithImageArrayList> itemsWithImageArrayLists;
 
 
     @Override
@@ -50,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         itemsDetails = new ArrayList<>();
+        itemForHomeImages = new ArrayList<>();
+        itemsWithImageArrayLists = new ArrayList<>();
 
         bagImage = findViewById(R.id.imageView7);
         navicon = findViewById(R.id.navicon);
@@ -61,7 +68,19 @@ public class MainActivity extends AppCompatActivity {
         Company name = Categories
          */
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1, "Men", "Men Slim FIt Casual Shirt",
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel1,R.drawable.womenmodel1,R.drawable.kid3,R.drawable.furniture1));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel2,R.drawable.womenmodel2,R.drawable.kid4,R.drawable.furniture3));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel3,R.drawable.womenmodel3,R.drawable.kid5,R.drawable.furniture4));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel4,R.drawable.womenmodel4,R.drawable.kid4,R.drawable.furniture5));
+
+
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages,R.drawable.menmodel4,"Men","Men Slim Fit Casual Shirt","hello",false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages,R.drawable.womenmodel1,"Women","Women Slim Fit Casual Shirt","hello",false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages,R.drawable.kid3,"Kids","Women Slim Fit Casual Shirt","hello",false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages,R.drawable.furniture3,"Furniture","Dummy Data about furniture","hello",false));
+
+
+      /*  itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4, "Men", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new ItemsWithImage(R.drawable.womenmodel1, "Women", "Men Slim FIt Casual Shirt",
@@ -70,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         itemsDetails.add(new ItemsWithImage(R.drawable.kid3, "Kids", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.furniture1, "Furniture", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.furniture3, "Furniture", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         //menImageView = findViewById(R.id.imageView1);
@@ -141,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         bottomTextView.startAnimation(animationBottom);
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerView);
-        RecyclerViewAdapterForHomeScreen myAdapter = new RecyclerViewAdapterForHomeScreen(this, itemsDetails);
+        RecyclerViewAdapterForHomeScreen myAdapter = new RecyclerViewAdapterForHomeScreen(this, itemsWithImageArrayLists);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
