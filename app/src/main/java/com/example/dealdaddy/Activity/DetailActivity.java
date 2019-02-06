@@ -66,6 +66,8 @@ public class DetailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1 = new Intent(DetailActivity.this, MainActivity.class);
                 startActivity(intent1);
+                overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+                finish();
             }
         });
 
@@ -174,6 +176,16 @@ public class DetailActivity extends AppCompatActivity {
 
 
         }
+    }
+    @Override
+    public void onBackPressed()
+    {
+        // code here to show dialog
+        Intent intent1 = new Intent(DetailActivity.this, MainActivity.class);
+        startActivity(intent1);
+        overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+        finish();
+        super.onBackPressed();  // optional depending on your needs
     }
 
 }

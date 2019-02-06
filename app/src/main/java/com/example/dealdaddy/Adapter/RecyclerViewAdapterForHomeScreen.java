@@ -1,5 +1,6 @@
 package com.example.dealdaddy.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -56,12 +57,16 @@ public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<Recyc
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, DetailActivity.class);
-
                 Bundle bundle = new Bundle();
                 bundle.putString("ModelType", mData.get(position).getCompanyName());
                 bundle.putInt("ModelImage", mData.get(position).getProductImage());
                 intent.putExtras(bundle);
-                mContext.startActivity(intent);
+               // mContext.(R.anim.slide_in_right,R.anim.slide_out_right);
+               // startActivity(intent_next);
+               // finish();
+                Activity activity = (Activity) mContext;
+                activity.startActivity(intent);
+                activity.overridePendingTransition(R.anim.zoom_exit,R.anim.slide_out_right);
 
             }
         });

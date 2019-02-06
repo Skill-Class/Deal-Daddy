@@ -60,6 +60,8 @@ public class IntroScreen extends AppCompatActivity {
 
                 Intent intent = new Intent(IntroScreen.this, MainActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.zoom_exit,R.anim.slide_out_right);
+                finish();
             }
         });
     }

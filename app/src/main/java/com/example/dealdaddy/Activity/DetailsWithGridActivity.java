@@ -33,6 +33,7 @@ public class DetailsWithGridActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1 = new Intent(DetailsWithGridActivity.this, DetailActivity.class);
                 startActivity(intent1);
+                overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
             }
         });
 
@@ -122,4 +123,17 @@ public class DetailsWithGridActivity extends AppCompatActivity {
         myrv.setAdapter(myAdapter);
 
     }
+
+    @Override
+    public void onBackPressed()
+    {
+        // code here to show dialog
+        Intent intent1 = new Intent(DetailsWithGridActivity.this, DetailActivity.class);
+        startActivity(intent1);
+        overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+        finish();
+        super.onBackPressed();  // optional depending on your needs
+    }
+
+
 }

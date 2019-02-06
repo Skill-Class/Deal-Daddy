@@ -42,6 +42,7 @@ public class CheckoutActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(CheckoutActivity.this, OrderConfirmActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
             }
         });
 
@@ -121,5 +122,17 @@ public class CheckoutActivity extends AppCompatActivity {
         mNotificationManager.notify(0, mBuilder.build());
 
     }
+
+    @Override
+    public void onBackPressed()
+    {
+        // code here to show dialog
+        Intent intent = new Intent(CheckoutActivity.this, OrderConfirmActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+        finish();
+        super.onBackPressed();  // optional depending on your needs
+    }
+
 
 }
