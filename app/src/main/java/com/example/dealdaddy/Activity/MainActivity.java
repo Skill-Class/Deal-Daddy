@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Company name = Categories
          */
 
-        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel1,R.drawable.womenmodel1,R.drawable.kid3,R.drawable.furniture1));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel1,R.drawable.womenmodel5,R.drawable.kid3,R.drawable.furniture1));
         itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel2,R.drawable.womenmodel2,R.drawable.kid4,R.drawable.furniture3));
         itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel3,R.drawable.womenmodel3,R.drawable.kid5,R.drawable.furniture4));
         itemForHomeImages.add(new ItemForHomeImages(R.drawable.pic2,R.drawable.womenmodel4,R.drawable.kid4,R.drawable.furniture5));
