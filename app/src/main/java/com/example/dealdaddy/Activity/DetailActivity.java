@@ -32,7 +32,8 @@ public class DetailActivity extends AppCompatActivity {
     private ImageView BackBtn;
 
     private TextView dealDaddyText;
-
+    private String ModelCat;
+    private Integer ModelImage;
     private List<ItemsWithImage> itemsDetails;
 
 
@@ -42,6 +43,20 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         dealDaddyText = findViewById(R.id.dealDaddyText);
+        // fetching data from homescreen activity
+
+
+     //   ModelCat = "Men";
+       ModelImage = R.drawable.pic2;
+
+        Bundle bundle = getIntent().getExtras();
+
+        if(bundle != null){
+            String ModelCat = bundle.getString("ModelType");
+           // Integer ModelImage = bundle.getInt("ModelImage");
+            dealDaddyText.setText(ModelCat);
+
+        }
 
 
         BackBtn = findViewById(R.id.navicon);
@@ -49,17 +64,14 @@ public class DetailActivity extends AppCompatActivity {
         BackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DetailActivity.this, MainActivity.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(DetailActivity.this, MainActivity.class);
+                startActivity(intent1);
+                overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+                finish();
             }
         });
 
-        // fetching data from homescreen activity
-        Bundle bundle = getIntent().getExtras();
-        String ModelCat = bundle.getString("ModelType");
-        Integer ModelImage = bundle.getInt("ModelImage");
 
-        dealDaddyText.setText(ModelCat);
 
         lstSlides = new ArrayList<>();
         sliderpager = findViewById(R.id.slider_pager);
@@ -164,6 +176,16 @@ public class DetailActivity extends AppCompatActivity {
 
 
         }
+    }
+    @Override
+    public void onBackPressed()
+    {
+        // code here to show dialog
+        Intent intent1 = new Intent(DetailActivity.this, MainActivity.class);
+        startActivity(intent1);
+        overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+        finish();
+        super.onBackPressed();  // optional depending on your needs
     }
 
 }

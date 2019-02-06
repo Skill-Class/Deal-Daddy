@@ -33,6 +33,7 @@ public class OrderConfirmActivity extends AppCompatActivity {
 
     private Spinner spinnerSize;
     private Spinner spinnerQty;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,7 @@ public class OrderConfirmActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(OrderConfirmActivity.this, CheckoutActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.zoom_exit, R.anim.slide_out_right);
             }
         });
 
@@ -54,14 +56,12 @@ public class OrderConfirmActivity extends AppCompatActivity {
         // it will be implemented in Order Confirm adapter class.
 
 
-
-
-
         BackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(OrderConfirmActivity.this, AboutItemActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
             }
         });
 
@@ -69,15 +69,14 @@ public class OrderConfirmActivity extends AppCompatActivity {
         itemsDetails = new ArrayList<>();
 
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2, "BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9, "Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
 
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerView);
@@ -90,5 +89,16 @@ public class OrderConfirmActivity extends AppCompatActivity {
 
 
     }
+    @Override
+    public void onBackPressed()
+    {
+        // code here to show dialog
+        Intent intent = new Intent(OrderConfirmActivity.this, AboutItemActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+        finish();
+        super.onBackPressed();  // optional depending on your needs
+    }
+
 
 }

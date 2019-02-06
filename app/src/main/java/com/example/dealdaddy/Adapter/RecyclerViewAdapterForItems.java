@@ -1,5 +1,6 @@
 package com.example.dealdaddy.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -71,6 +72,9 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, AboutItemActivity.class);
                 mContext.startActivity(intent);
+                Activity activity = (Activity) mContext;
+                activity.startActivity(intent);
+                activity.overridePendingTransition(R.anim.zoom_exit,R.anim.slide_out_right);
             }
         });
 

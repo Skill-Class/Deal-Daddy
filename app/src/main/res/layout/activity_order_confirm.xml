@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     tools:context=".Activity.OrderConfirmActivity">
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_marginRight="32dp"
         android:fontFamily="@font/ovo"
         android:text="Order Details"
-        android:textColor="#ffff"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -294,7 +294,7 @@
         android:fontFamily="@font/ovo"
         android:text="Order Summery"
         android:textSize="18sp"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout11" />

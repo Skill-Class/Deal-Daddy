@@ -42,6 +42,7 @@ public class AboutItemActivity extends AppCompatActivity {
 
                 Intent intent =new Intent(AboutItemActivity.this,OrderConfirmActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.zoom_exit,R.anim.slide_out_right);
             }
         });
 
@@ -50,6 +51,7 @@ public class AboutItemActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AboutItemActivity.this, DetailActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
             }
         });
 
@@ -100,4 +102,16 @@ public class AboutItemActivity extends AppCompatActivity {
         myrv.setLayoutManager(layoutManager);
         myrv.setAdapter(myAdapter);
     }
+
+    @Override
+    public void onBackPressed()
+    {
+        // code here to show dialog
+        Intent intent = new Intent(AboutItemActivity.this, DetailActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+        finish();
+        super.onBackPressed();  // optional depending on your needs
+    }
+
 }

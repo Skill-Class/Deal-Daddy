@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     tools:context=".Activity.AboutItemActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/ovo"
         android:text="About"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
@@ -727,7 +727,7 @@
                 android:fontFamily="@font/ovo"
                 android:gravity="center"
                 android:text="@string/lastString"
-                android:textColor="#fff"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="12sp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
