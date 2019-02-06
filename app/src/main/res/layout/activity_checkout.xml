@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     tools:context=".Activity.CheckoutActivity">
 
 
@@ -17,7 +17,7 @@
         android:layout_marginRight="8dp"
         android:fontFamily="@font/ovo"
         android:text="Address"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

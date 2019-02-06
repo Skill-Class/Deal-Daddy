@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimary"
     tools:context=".Activity.DetailsWithGridActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginTop="18dp"
         android:fontFamily="@font/ovo"
         android:text="DealDaddy - Men"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
@@ -99,7 +99,7 @@
                 android:lineSpacingExtra="3dp"
                 android:text="@string/shortText"
                 android:textAlignment="center"
-                android:textColor="#fff"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

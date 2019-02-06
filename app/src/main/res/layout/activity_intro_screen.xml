@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
     android:layout_height="match_parent"
     tools:context=".Activity.IntroScreen">
 
@@ -10,7 +11,7 @@
         android:id="@+id/constraintLayout14"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:background="@color/colorPrimaryDark"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout15"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,9 +25,9 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
+            android:src="@drawable/logocolor"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/logocolor" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView2"
@@ -34,13 +35,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:text="We care\n about your daily load"
-            android:textColor="#fff"
+            android:textColor="@color/colorPrimary"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +56,7 @@
             android:gravity="center"
             android:padding="16dp"
             android:text="Whoever said money can't buy happiness simply didn't know where to go shopping.\n - Gertrude Stein "
-            android:textColor="#fff"
+            android:textColor="#f1f1f1"
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/button3"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,7 +86,7 @@
             android:layout_marginBottom="24dp"
             android:fontFamily="@font/ovo"
             android:text="Learn more"
-            android:textColor="#fff"
+            android:textColor="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -113,7 +114,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="#f1f1f1"
         android:elevation="10dp"
         android:padding="16dp"
@@ -139,6 +140,7 @@
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="@color/colorPrimaryDark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView91" />
@@ -168,6 +170,7 @@
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="@color/colorPrimaryDark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -197,6 +200,7 @@
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="@color/colorPrimaryDark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView81111"
             app:layout_constraintTop_toBottomOf="@+id/imageView9111" />
@@ -225,6 +229,7 @@
             android:fontFamily="@font/ovo"
             android:text="Sold By : FashionTech"
             android:textSize="10sp"
+            android:textColor="@color/colorPrimaryDark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView81"
             app:layout_constraintTop_toBottomOf="@+id/imageView91111" />
