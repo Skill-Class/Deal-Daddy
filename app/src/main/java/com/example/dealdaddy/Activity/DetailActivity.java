@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dealdaddy.Model.Items;
 import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 import com.example.dealdaddy.Adapter.RecyclerViewAdapterForItemsDetails;
@@ -88,11 +87,11 @@ public class DetailActivity extends AppCompatActivity {
         String funitureUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fnathan-fertig-249917-unsplash.jpg?alt=media&token=4c210b3e-43a4-4d7e-b633-2bc57ac63d1c";
 
 
-        lstSlides.add(new Slide(R.drawable.pic2, "HIGHLANDER \nUp to 70% Off"));
+        lstSlides.add(new Slide(R.drawable.sliderimagetwo, "HIGHLANDER \nUp to 70% Off"));
        // lstSlides.add(new Slide(R.drawable.pic8, "Tiptoeing Into The Weekend! \nMIN. 40% OFF"));
         //lstSlides.add(new Slide(R.drawable.pic7, "FRENCH CONNECTION \nGame-Changing Picks At 40-70% Off"));
-        lstSlides.add(new Slide(R.drawable.pic3, "The Tracks & Tee Look \nMin. 50% Off"));
-        lstSlides.add(new Slide(R.drawable.pic4, "Stylish Watches \nEnjoy Up To 40% Off On"));
+        lstSlides.add(new Slide(R.drawable.sliderimagefour, "The Tracks & Tee Look \nMin. 50% Off"));
+        lstSlides.add(new Slide(R.drawable.sliderimagethree, "Stylish Watches \nEnjoy Up To 40% Off On"));
        // lstSlides.add(new Slide(R.drawable.pic7, "Sportswear To Keep You Fit & Fab ! \nMin. 30% Off"));
 
 

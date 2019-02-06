@@ -50,7 +50,7 @@ public class SliderPagerAdapter extends PagerAdapter {
                 activity.overridePendingTransition(R.anim.zoom_exit,R.anim.slide_out_right);
             }
         });
-      //  slideImg.setImageResource(mList.get(position).getImage());
+        slideImg.setImageResource(mList.get(position).getImage());
         slideText.setText(mList.get(position).getTitle());
 
         container.addView(slideLayout);
