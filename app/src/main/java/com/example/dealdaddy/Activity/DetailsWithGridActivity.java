@@ -42,19 +42,10 @@ public class DetailsWithGridActivity extends AppCompatActivity {
 
         itemsDetails = new ArrayList<>();
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel2,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
@@ -66,21 +57,13 @@ public class DetailsWithGridActivity extends AppCompatActivity {
         itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
@@ -92,7 +75,15 @@ public class DetailsWithGridActivity extends AppCompatActivity {
         itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4,"Roadster", "Men Skinny Fit Jeans",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1,"BlackBerrys", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"Levis", "Men Regular FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel2,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
@@ -104,10 +95,19 @@ public class DetailsWithGridActivity extends AppCompatActivity {
         itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1,"Levis", "Men Regular FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4,"Roadster", "Men Skinny Fit Jeans",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
