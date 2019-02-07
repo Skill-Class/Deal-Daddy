@@ -79,6 +79,8 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
 
         Picasso.with(mContext).load((mData.get(position).getProductImage())).into(holder.modelImage);
 
+        holder.companyName.setText(mData.get(position).getCompanyName());
+
         holder.modelImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

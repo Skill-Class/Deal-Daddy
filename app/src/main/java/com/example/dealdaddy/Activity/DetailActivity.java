@@ -105,21 +105,21 @@ public class DetailActivity extends AppCompatActivity {
         itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4,"BlackBerrys", "Men Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4,"WROGN", "Men Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1,"BlackBerrys", "Men Slim Fit Denim Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1,"Benetton", "Men Slim Fit Denim Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.menimg,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"Highlander", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim Regular Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"BlackBerrys", "Cotton Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel2,"BlackBerrys", "Men Slim Regular Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4,"BlackBerrys", "Men Checked Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"WROGN", "Cotton Slim FIt Casual Shirt",
+                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4,"Highlander", "Men Checked Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         itemsDetails.add(new ItemsWithImage(ModelImage,"BlackBerrys", " Casual Shirt",
