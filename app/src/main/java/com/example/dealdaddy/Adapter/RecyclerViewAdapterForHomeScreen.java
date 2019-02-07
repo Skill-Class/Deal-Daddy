@@ -21,6 +21,7 @@ import java.util.List;
 
 /*
       @author - Sheetal Kumar
+      hello world
  */
 
 
@@ -29,6 +30,7 @@ public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<Recyc
 
     private Context mContext;
     private List<ItemsWithImageArrayList> mData;
+
 
 
     public RecyclerViewAdapterForHomeScreen(Context mContext, List<ItemsWithImageArrayList> mData) {
