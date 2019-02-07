@@ -14,6 +14,7 @@ import com.example.dealdaddy.Activity.AboutItemActivity;
 import com.example.dealdaddy.Model.Items;
 import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -68,7 +69,16 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
             }
         });
 
-        holder.modelImage.setImageResource(mData.get(position).getProductImage());
+      //  holder.modelImage.setImageResource(mData.get(position).getProductImage());
+
+      /*  Picasso.with(this)
+                .load(menUrl)
+                .into(menImageView);
+*/
+       // Picasso.with(mContext).load(holder.modelImage.(mData.get(position).getProductImage());
+
+        Picasso.with(mContext).load((mData.get(position).getProductImage())).into(holder.modelImage);
+
         holder.modelImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +91,10 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
             }
         });
 
+
+
         holder.companyName.setText(mData.get(position).getCompanyName());
+        holder.ItemTypeText.setText(mData.get(position).getItemType());
 
        // holder.modelImage.setBackground(mData.get(position).getimg());
 
@@ -111,7 +124,7 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView priceText,companyName;
+        TextView priceText,companyName,ItemTypeText;
         ImageView favImageView,modelImage;
 
         // CardView cardView ;
@@ -123,6 +136,7 @@ public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<Rec
             favImageView = itemView.findViewById(R.id.imageView10);
             companyName = itemView.findViewById(R.id.textView7);
             modelImage = itemView.findViewById(R.id.imageView9);
+            ItemTypeText = itemView.findViewById(R.id.textView8);
 
             // String text = "\\u20B9 1245  \\u20B9 2490 (50% Off)";
 
