@@ -23,6 +23,7 @@ public class AboutItemActivity extends AppCompatActivity {
     private ImageView BackBtn;
     private Button bagButton;
 
+    private ImageView ModelMainImage;
     private List<ItemsWithImage> itemsDetails;
 
     @Override
@@ -32,6 +33,18 @@ public class AboutItemActivity extends AppCompatActivity {
 
         BackBtn = findViewById(R.id.navicon);
         bagButton = findViewById(R.id.button);
+
+        ModelMainImage = findViewById(R.id.imageView13);
+
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+
+        if(bundle!=null){
+            Integer modelImage = (Integer) bundle.get("ProductImage");
+            ModelMainImage.setImageResource(modelImage);
+
+        }
 
         bagButton.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")

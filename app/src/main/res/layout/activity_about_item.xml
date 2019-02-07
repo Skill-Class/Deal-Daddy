@@ -67,7 +67,7 @@
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="500dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/pic2"
                 app:layout_constraintEnd_toEndOf="parent"

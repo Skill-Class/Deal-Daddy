@@ -71,6 +71,7 @@ public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerVi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, AboutItemActivity.class);
+                intent.putExtra("ProductImage",mData.get(position).getProductImage());
                 mContext.startActivity(intent);
                 Activity activity = (Activity) mContext;
                 activity.startActivity(intent);
