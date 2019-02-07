@@ -1,5 +1,12 @@
 package com.example.dealdaddy.Model;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
 public class ItemForHomeImages {
 
     private Integer menImage;

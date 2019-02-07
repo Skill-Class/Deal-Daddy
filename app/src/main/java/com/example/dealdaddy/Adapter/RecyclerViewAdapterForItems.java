@@ -18,6 +18,13 @@ import com.example.dealdaddy.R;
 
 import java.util.List;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
 public class RecyclerViewAdapterForItems extends RecyclerView.Adapter<RecyclerViewAdapterForItems.MyViewHolder> {
 
     private Context mContext;

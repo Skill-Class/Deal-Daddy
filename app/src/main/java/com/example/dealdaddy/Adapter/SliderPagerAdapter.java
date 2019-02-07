@@ -17,6 +17,13 @@ import com.example.dealdaddy.Model.Slide;
 
 import java.util.List;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
 public class SliderPagerAdapter extends PagerAdapter {
 
     private Context mContext ;

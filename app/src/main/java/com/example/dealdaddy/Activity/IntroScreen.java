@@ -16,6 +16,15 @@ import android.widget.Toast;
 
 import com.example.dealdaddy.R;
 
+
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
+
 public class IntroScreen extends AppCompatActivity {
 
     Button startbtn;

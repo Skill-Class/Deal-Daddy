@@ -18,6 +18,12 @@ import com.example.dealdaddy.R;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
 public class AboutItemActivity extends AppCompatActivity {
 
     private ImageView BackBtn;
@@ -40,7 +46,7 @@ public class AboutItemActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
-        if(bundle!=null){
+        if (bundle != null) {
             Integer modelImage = (Integer) bundle.get("ProductImage");
             ModelMainImage.setImageResource(modelImage);
 
@@ -53,9 +59,9 @@ public class AboutItemActivity extends AppCompatActivity {
                 bagButton.setText("VIEW BAG");
                 bagButton.setBackgroundColor(R.color.colorAccent);
 
-                Intent intent =new Intent(AboutItemActivity.this,OrderConfirmActivity.class);
+                Intent intent = new Intent(AboutItemActivity.this, OrderConfirmActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.zoom_exit,R.anim.slide_out_right);
+                overridePendingTransition(R.anim.zoom_exit, R.anim.slide_out_right);
             }
         });
 
@@ -64,47 +70,47 @@ public class AboutItemActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AboutItemActivity.this, DetailActivity.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+                overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
             }
         });
 
 
         itemsDetails = new ArrayList<>();
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2, "BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9, "Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2, "BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9, "Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2, "BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9, "Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic2,"BlackBerrys", "Men Slim FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic2, "BlackBerrys", "Men Slim FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic3,"Levis", "Men Regular FIt Casual Shirt",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic3, "Levis", "Men Regular FIt Casual Shirt",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
-        itemsDetails.add(new ItemsWithImage(R.drawable.pic9,"Roadster", "Men Skinny Fit Jeans",
+        itemsDetails.add(new ItemsWithImage(R.drawable.pic9, "Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
 
         RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerView);
@@ -117,12 +123,11 @@ public class AboutItemActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         // code here to show dialog
         Intent intent = new Intent(AboutItemActivity.this, DetailActivity.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.animation_enter,R.anim.animation_leave);
+        overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
         finish();
         super.onBackPressed();  // optional depending on your needs
     }

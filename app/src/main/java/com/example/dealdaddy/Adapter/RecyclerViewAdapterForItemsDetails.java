@@ -18,6 +18,15 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
+
 public class RecyclerViewAdapterForItemsDetails extends RecyclerView.Adapter<RecyclerViewAdapterForItemsDetails.MyViewHolder> {
 
     private Context mContext;

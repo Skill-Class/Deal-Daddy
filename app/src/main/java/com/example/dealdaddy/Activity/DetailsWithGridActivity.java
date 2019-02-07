@@ -16,6 +16,14 @@ import com.example.dealdaddy.Adapter.RecyclerViewAdapterForItems;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
+
 public class DetailsWithGridActivity extends AppCompatActivity {
 
     private List<ItemsWithImage> itemsDetails;
