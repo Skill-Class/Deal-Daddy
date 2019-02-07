@@ -27,9 +27,21 @@ import java.util.TimerTask;
 
 
 /*
-      @author - Sheetal Kumar
- */
+      @Author - Sheetal Kumar
+      -------------------------------------
 
+       In App - Activity with slider Adapter
+       Attached adapter - RecyclerViewAdapterForItemDetails
+
+       Objective -
+
+       Todo - nothing
+
+       Status - complete
+
+      -------------------------------------
+
+ */
 
 
 public class DetailActivity extends AppCompatActivity {

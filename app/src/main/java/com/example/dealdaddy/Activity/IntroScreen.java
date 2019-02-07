@@ -20,7 +20,18 @@ import com.example.dealdaddy.R;
 
 
 /*
-      @author - Sheetal Kumar
+      @Author - Sheetal Kumar
+      -------------------------------------
+
+       In App - Main Intro Screen
+       Objective -
+
+       Todo - nothing
+
+       Status - complete
+
+      -------------------------------------
+
  */
 
 

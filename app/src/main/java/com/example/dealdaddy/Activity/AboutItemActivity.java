@@ -20,7 +20,23 @@ import java.util.List;
 
 
 /*
-      @author - Sheetal Kumar
+      @Author - Sheetal Kumar
+      -------------------------------------
+
+       In App - Activity with full description of product
+       Attached adapter - RecyclerViewAdapterForHomeScreen
+
+       Objective -
+
+       Todo 1 -  To update details of products according to users preference
+       Todo 2 - Wishlist Button data needs to be update
+       Todo 3 -  Add to bad button needs to be update
+       Todo 4 - Take input for delivery address
+
+       Status - complete
+
+      -------------------------------------
+
  */
 
 

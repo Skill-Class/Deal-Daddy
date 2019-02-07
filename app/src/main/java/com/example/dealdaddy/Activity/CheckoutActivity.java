@@ -23,11 +23,20 @@ import static com.example.dealdaddy.R.layout.activity_checkout;
 
 
 
-
 /*
-      @author - Sheetal Kumar
- */
+      @Author - Sheetal Kumar
+      -------------------------------------
 
+       In App - Checkout activity
+            @Whenever use clicks one add to bag button he/she will be come to this screen
+
+       Attached adapter - RecyclerViewAdapterForHomeScreen
+       Objective -
+       Status - Incomplete
+
+      -------------------------------------
+
+ */
 
 
 public class CheckoutActivity extends AppCompatActivity {
