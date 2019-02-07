@@ -16,6 +16,26 @@ import android.widget.Toast;
 
 import com.example.dealdaddy.R;
 
+
+
+
+/*
+      @Author - Sheetal Kumar
+      -------------------------------------
+
+       In App - Main Intro Screen
+       Objective -
+
+       Todo - nothing
+
+       Status - complete
+
+      -------------------------------------
+
+ */
+
+
+
 public class IntroScreen extends AppCompatActivity {
 
     Button startbtn;

@@ -2,6 +2,13 @@ package com.example.dealdaddy.Model;
 
 import android.graphics.drawable.Drawable;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
 public class Items {
 
     private String companyName;

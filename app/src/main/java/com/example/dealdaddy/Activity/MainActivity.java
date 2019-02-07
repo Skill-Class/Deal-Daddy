@@ -23,8 +23,19 @@ import java.util.List;
 
 
 /*
-        @Date - 4 feb 2019
-        @author - Sheetal Kumar
+      @Author - Sheetal Kumar
+      -------------------------------------
+
+       In App - Main HomeScreen
+       Attached adapter - RecyclerViewAdapterForHomeScreen
+
+       Objective -
+
+       Todo - nothing
+
+       Status - complete
+
+      -------------------------------------
 
  */
 

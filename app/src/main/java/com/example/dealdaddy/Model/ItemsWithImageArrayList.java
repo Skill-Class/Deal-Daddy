@@ -2,6 +2,13 @@ package com.example.dealdaddy.Model;
 
 import java.util.List;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
 public class ItemsWithImageArrayList {
 
     private List<ItemForHomeImages> itemForHomeImages;

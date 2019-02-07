@@ -17,6 +17,14 @@ import com.example.dealdaddy.R;
 
 import java.util.List;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
+
 public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<RecyclerViewAdapterForHomeScreen.MyViewHolder> {
 
     private Context mContext;

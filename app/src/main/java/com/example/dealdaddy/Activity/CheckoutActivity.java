@@ -21,6 +21,24 @@ import com.example.dealdaddy.R;
 
 import static com.example.dealdaddy.R.layout.activity_checkout;
 
+
+
+/*
+      @Author - Sheetal Kumar
+      -------------------------------------
+
+       In App - Checkout activity
+            @Whenever user clicks  "Add To Bag" button, he/she will be come to this screen
+
+       Attached adapter - RecyclerViewAdapterForHomeScreen
+       Objective -
+       Status - Incomplete
+
+      -------------------------------------
+
+ */
+
+
 public class CheckoutActivity extends AppCompatActivity {
 
     private ImageView BackBtn;

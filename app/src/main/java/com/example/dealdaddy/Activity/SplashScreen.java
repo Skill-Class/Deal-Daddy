@@ -11,6 +11,13 @@ import android.widget.TextView;
 import com.example.dealdaddy.Activity.MainActivity;
 import com.example.dealdaddy.R;
 
+
+
+/*
+      @author - Sheetal Kumar
+ */
+
+
 public class SplashScreen extends AppCompatActivity {
 
     private ImageView logo;
