@@ -28,7 +28,7 @@ import static com.example.dealdaddy.R.layout.activity_checkout;
       -------------------------------------
 
        In App - Checkout activity
-            @Whenever use clicks one add to bag button he/she will be come to this screen
+            @Whenever user clicks  "Add To Bag" button, he/she will be come to this screen
 
        Attached adapter - RecyclerViewAdapterForHomeScreen
        Objective -
