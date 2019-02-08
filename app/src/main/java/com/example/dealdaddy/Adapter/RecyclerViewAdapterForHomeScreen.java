@@ -71,6 +71,7 @@ public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<Recyc
                 bundle.putString("ModelType",mData.get(position).getCompanyName());
                 bundle.putInt("ModelImage",mData.get(position).getProductImage());
                 intent.putExtras(bundle);
+                mContext.startActivity(intent);
 
             }
         });
