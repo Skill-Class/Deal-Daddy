@@ -25,16 +25,11 @@ import java.util.List;
 /*
       @Author - Sheetal Kumar
       -------------------------------------
-
-       In App - Main HomeScreen
-       Attached adapter - RecyclerViewAdapterForHomeScreen
-
-       Objective -
-
-       Todo - nothing
-
-       Status - complete
-
+      In App - Main HomeScreen
+      Attached adapter - RecyclerViewAdapterForHomeScreen
+      Objective -
+      Todo - nothing
+      Status - complete
       -------------------------------------
 
  */
