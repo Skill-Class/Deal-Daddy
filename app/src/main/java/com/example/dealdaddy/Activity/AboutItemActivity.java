@@ -71,6 +71,9 @@ public class AboutItemActivity extends AppCompatActivity {
          */
         AddAdapterAndLayoutIntoRecyclerView();
 
+
+
+
         bagButton.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
             @Override

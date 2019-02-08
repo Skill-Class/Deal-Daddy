@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private View viewLast;
 
     private List<ItemForHomeImages> itemForHomeImages;
-    private RecyclerView myrv;
+    private RecyclerView recyclerView;
 
     private List<ItemsWithImageArrayList> itemsWithImageArrayLists;
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         navicon = findViewById(R.id.navicon);
         bottomTextView = findViewById(R.id.bottomTextView);
         viewLast = findViewById(R.id.viewlast);
-        myrv = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
 
     }
 
@@ -95,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerViewAdapterForHomeScreen myAdapter = new RecyclerViewAdapterForHomeScreen(this, itemsWithImageArrayLists);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
-        myrv.setLayoutManager(layoutManager);
-        myrv.setAdapter(myAdapter);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(myAdapter);
     }
 
     private void AddAnimationToView() {

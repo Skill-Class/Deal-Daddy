@@ -55,7 +55,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
 
         /*
-        **Sending user to order confirm activity after back button clicked/
+         **Sending user to order confirm activity after back button clicked/
          */
         BackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,10 +66,10 @@ public class CheckoutActivity extends AppCompatActivity {
 
 
         /*
-        **
-        * Adding payment Methond ListView
-        * ListView On touch event also added.
-        * Once user choose any payment method he we receive a notification about order conformation.
+         **
+         * Adding payment Methond ListView
+         * ListView On touch event also added.
+         * Once user choose any payment method he we receive a notification about order conformation.
          */
 
         payBtn.setOnClickListener(new View.OnClickListener() {
@@ -130,9 +130,11 @@ public class CheckoutActivity extends AppCompatActivity {
     }
 
     private void sendUserToOrderConfirmActivity() {
+
         Intent intent = new Intent(CheckoutActivity.this, OrderConfirmActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
+
     }
 
     private void AddXMLToJava() {
@@ -170,13 +172,13 @@ public class CheckoutActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+
         // code here to show dialog
         Intent intent = new Intent(CheckoutActivity.this, OrderConfirmActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
         finish();
         super.onBackPressed();  // optional depending on your needs
+
     }
-
-
 }
