@@ -69,7 +69,7 @@ public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onStart() {
-        
+
         super.onStart();
         final Intent intent = new Intent(this, IntroScreen.class);
         Thread timer = new Thread() {

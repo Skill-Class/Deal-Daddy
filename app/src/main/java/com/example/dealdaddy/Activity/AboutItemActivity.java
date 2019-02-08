@@ -20,53 +20,56 @@ import java.util.List;
 
 
 /*
-      @Author - Sheetal Kumar
-      -------------------------------------
-
-       In App - Activity with full description of product
-       Attached adapter - RecyclerViewAdapterForHomeScreen
-
-       Objective -
-
-       Todo 1 -  To update details of products according to users preference
-       Todo 2 - Wishlist Button data needs to be update
-       Todo 3 -  Add to bad button needs to be update
-       Todo 4 - Take input for delivery address
-
-       Status - complete
-
-      -------------------------------------
-
+    @Author - Sheetal Kumar
+    -------------------------------------
+    In App - Activity with full description of product
+    Attached adapter - RecyclerViewAdapterForHomeScreen
+    Objective -
+    Todo 1 -  To update details of products according to users preference
+    Todo 2 - Wishlist Button data needs to be update
+    Todo 3 -  Add to bad button needs to be update
+    Todo 4 - Take input for delivery address
+    Status - complete
+    -------------------------------------
  */
 
 
 public class AboutItemActivity extends AppCompatActivity {
 
-    private ImageView BackBtn;
+    private ImageView BackBtn,ModelMainImage;
     private Button bagButton;
-
-    private ImageView ModelMainImage;
     private List<ItemsWithImage> itemsDetails;
+    private RecyclerView myrv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_item);
 
-        BackBtn = findViewById(R.id.navicon);
-        bagButton = findViewById(R.id.button);
+        /*
+         **
+         * Connecting all XML views to java file using findViewById
+         */
+        AddXMLToJava();
 
-        ModelMainImage = findViewById(R.id.imageView13);
+        /*
+         **
+         * getting value from bundle
+         */
+        CheckValuesFromBundle();
 
+        /*
+         **
+         * Adding Static Data to ArrayLists
+         * Will use list according to requirements
+         */
+        AddImagesIntoArrayLists();
 
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-
-        if (bundle != null) {
-            Integer modelImage = (Integer) bundle.get("ProductImage");
-            ModelMainImage.setImageResource(modelImage);
-
-        }
+        /*
+         **
+         * Adding adapter to recycler View so that it can be displayed.
+         */
+        AddAdapterAndLayoutIntoRecyclerView();
 
         bagButton.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("ResourceAsColor")
@@ -90,6 +93,19 @@ public class AboutItemActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void AddAdapterAndLayoutIntoRecyclerView() {
+
+
+        RecyclerViewAdapterForItemsDetails myAdapter = new RecyclerViewAdapterForItemsDetails(this, itemsDetails);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+
+        myrv.setLayoutManager(layoutManager);
+        myrv.setAdapter(myAdapter);
+    }
+
+    private void AddImagesIntoArrayLists() {
 
         itemsDetails = new ArrayList<>();
 
@@ -128,14 +144,26 @@ public class AboutItemActivity extends AppCompatActivity {
 
         itemsDetails.add(new ItemsWithImage(R.drawable.pic9, "Roadster", "Men Skinny Fit Jeans",
                 "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
+    }
 
-        RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerView);
-        RecyclerViewAdapterForItemsDetails myAdapter = new RecyclerViewAdapterForItemsDetails(this, itemsDetails);
+    private void CheckValuesFromBundle() {
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
 
-        myrv.setLayoutManager(layoutManager);
-        myrv.setAdapter(myAdapter);
+        if (bundle != null) {
+            Integer modelImage = (Integer) bundle.get("ProductImage");
+            ModelMainImage.setImageResource(modelImage);
+        }
+    }
+
+    private void AddXMLToJava() {
+
+        BackBtn = findViewById(R.id.navicon);
+        bagButton = findViewById(R.id.button);
+        ModelMainImage = findViewById(R.id.imageView13);
+        myrv = findViewById(R.id.recyclerView);
+
     }
 
     @Override

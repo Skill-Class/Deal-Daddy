@@ -43,8 +43,6 @@ public class IntroScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro_screen);
 
-
-
         /*
          **
          * Connecting all XML views to java file using findViewById
@@ -57,7 +55,6 @@ public class IntroScreen extends AppCompatActivity {
          * Here using AnimationUtils
          */
         AddAnimationToView();
-
 
         /*
          **
@@ -77,10 +74,7 @@ public class IntroScreen extends AppCompatActivity {
         startbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 sendToMain();
-
-
             }
         });
     }
