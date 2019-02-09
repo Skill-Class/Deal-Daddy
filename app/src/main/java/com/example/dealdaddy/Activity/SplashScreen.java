@@ -13,7 +13,7 @@ import com.example.dealdaddy.R;
 
 
 
-/*
+/**
       @Author - Sheetal Kumar
       -------------------------------------
        In App - Splash Activity
@@ -34,13 +34,13 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        /*
+        /**
          **
          * Connecting all XML views to java file using findViewById
          */
         AddXMLToJava();
 
-        /*
+        /**
          **
          * Adding Animation to Views
          * Here using AnimationUtils

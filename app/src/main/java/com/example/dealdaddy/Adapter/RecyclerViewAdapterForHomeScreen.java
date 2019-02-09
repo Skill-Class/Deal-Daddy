@@ -75,6 +75,8 @@ public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<Recyc
 
             }
         });
+
+        holder.aboutItemTextview.setText(mData.get(position).getItemType());
         /* holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,7 +103,7 @@ public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<Recyc
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView priceText,companyName;
+        TextView priceText,companyName,aboutItemTextview;
         ImageView favImageView,modelImage;
 
         // CardView cardView ;
@@ -113,6 +115,7 @@ public class RecyclerViewAdapterForHomeScreen extends RecyclerView.Adapter<Recyc
             //favImageView = itemView.findViewById(R.id.imageView10);
             modelImage = itemView.findViewById(R.id.imageView9);
             companyName = itemView.findViewById(R.id.textView7);
+            aboutItemTextview = itemView.findViewById(R.id.textView8);
 
             // String text = "\\u20B9 1245  \\u20B9 2490 (50% Off)";
 

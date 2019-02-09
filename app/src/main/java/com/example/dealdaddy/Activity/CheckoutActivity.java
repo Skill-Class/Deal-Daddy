@@ -23,7 +23,7 @@ import static com.example.dealdaddy.R.layout.activity_checkout;
 
 
 
-/*
+/**
     @Author - Sheetal Kumar
     -------------------------------------
     In App - Checkout activity
@@ -47,14 +47,14 @@ public class CheckoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(activity_checkout);
 
-        /*
+        /**
          **
          * Connecting all XML views to java file using findViewById
          */
         AddXMLToJava();
 
 
-        /*
+        /**
          **Sending user to order confirm activity after back button clicked/
          */
         BackBtn.setOnClickListener(new View.OnClickListener() {
@@ -65,7 +65,7 @@ public class CheckoutActivity extends AppCompatActivity {
         });
 
 
-        /*
+        /**
          **
          * Adding payment Methond ListView
          * ListView On touch event also added.

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/*
+/**
     @Author - Sheetal Kumar
     -------------------------------------
     In App - Activity with full description of product
@@ -46,32 +46,30 @@ public class AboutItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_item);
 
-        /*
+        /**
          **
          * Connecting all XML views to java file using findViewById
          */
         AddXMLToJava();
 
-        /*
+        /**
          **
          * getting value from bundle
          */
         CheckValuesFromBundle();
 
-        /*
+        /**
          **
          * Adding Static Data to ArrayLists
          * Will use list according to requirements
          */
         AddImagesIntoArrayLists();
 
-        /*
+        /**
          **
          * Adding adapter to recycler View so that it can be displayed.
          */
         AddAdapterAndLayoutIntoRecyclerView();
-
-
 
 
         bagButton.setOnClickListener(new View.OnClickListener() {

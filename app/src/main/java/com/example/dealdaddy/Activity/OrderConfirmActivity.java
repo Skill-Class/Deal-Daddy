@@ -26,7 +26,7 @@ import java.util.List;
 
 
 
-/*
+/**
       @Author - Sheetal Kumar
       -------------------------------------
       In App - OrderConformation Activity
@@ -51,7 +51,7 @@ public class OrderConfirmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_confirm);
 
-        /*
+        /**
          **
          * Connecting all XML views to java file using findViewById
          */
@@ -77,14 +77,14 @@ public class OrderConfirmActivity extends AppCompatActivity {
             }
         });
 
-        /*
+        /**
          **
          * Adding Static Data to ArrayLists
          * Will use list according to requirements
          */
         AddImagesIntoArrayLists();
 
-        /*
+        /**
          **
          * Adding adapter to recycler View so that it can be displayed.
          */

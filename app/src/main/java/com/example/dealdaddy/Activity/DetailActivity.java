@@ -26,7 +26,7 @@ import java.util.TimerTask;
 
 
 
-/*
+/**
     @Author - Sheetal Kumar
     -------------------------------------
     In App - Activity with slider Adapter
@@ -57,36 +57,35 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        /*
+        /**
          **
          * Connecting all XML views to java file using findViewById
          */
         AddXMLToJava();
 
-        /*
-        fetching data from homescreen activity
+        /**
+        fetching data from home screen activity
          */
         getDataFromHomeScreen();
 
-        /*
+        /**
          **
          * Adding Static Data to ArrayLists
          * Will use list according to requirements
          */
         AddImagesIntoArrayLists();
 
-        /*
+        /**
         * sending to previous activity from this activity.
          */
         BackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              sendTobackActivity();
+              sendToBackActivity();
             }
         });
 
-
-        /*
+        /**
          **
          * Adding adapter to recycler View so that it can be displayed.
          */
@@ -94,7 +93,7 @@ public class DetailActivity extends AppCompatActivity {
 
     }
 
-    private void sendTobackActivity() {
+    private void sendToBackActivity() {
 
         Intent intent1 = new Intent(DetailActivity.this, MainActivity.class);
         startActivity(intent1);

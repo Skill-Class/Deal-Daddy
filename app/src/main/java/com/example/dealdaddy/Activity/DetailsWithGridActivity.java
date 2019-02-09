@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/*
+/**
     @Author - Sheetal Kumar
     -------------------------------------
     In App - Activity with Grid
@@ -41,7 +41,7 @@ public class DetailsWithGridActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_with_grid);
 
-        /*
+        /**
          **
          * Connecting all XML views to java file using findViewById
          */
@@ -55,14 +55,14 @@ public class DetailsWithGridActivity extends AppCompatActivity {
             }
         });
 
-        /*
+        /**
          **
          * Adding Static Data to ArrayLists
          * Will use list according to requirements
          */
         AddImagesIntoArrayLists();
 
-        /*
+        /**
          **
          * Adding adapter to recycler View so that it can be displayed.
          */

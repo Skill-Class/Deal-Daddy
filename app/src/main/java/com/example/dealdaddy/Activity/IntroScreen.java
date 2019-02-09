@@ -19,7 +19,7 @@ import com.example.dealdaddy.R;
 
 
 
-/*
+/**
       @Author - Sheetal Kumar
       -------------------------------------
        In App - Main Intro Screen
@@ -43,20 +43,20 @@ public class IntroScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro_screen);
 
-        /*
+        /**
          **
          * Connecting all XML views to java file using findViewById
          */
         AddXMLToJava();
 
-        /*
+        /**
          **
          * Adding Animation to Views
          * Here using AnimationUtils
          */
         AddAnimationToView();
 
-        /*
+        /**
          **
          * calling sharApp function so that user and share this app.
          */
@@ -67,7 +67,7 @@ public class IntroScreen extends AppCompatActivity {
             }
         });
 
-        /*
+        /**
          **
          * Sending user to Main Activity from this Activity after user clicks on start button.
          */

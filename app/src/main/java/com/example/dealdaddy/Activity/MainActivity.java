@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/*
+/**
       @Author - Sheetal Kumar
       -------------------------------------
       In App - Main HomeScreen
@@ -51,27 +51,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*
+        /**
         **
         * Connecting all XML views to java file using findViewById
         */
         AddXMLToJava();
 
-        /*
+        /**
         **
         * Adding Static Data to ArrayLists
         * Will use list according to requirements
          */
         AddImagesIntoArrayLists();
 
-        /*
+        /**
         **
         * Adding Animation to Views
         * Here using AnimationUtils
          */
         AddAnimationToView();
 
-        /*
+        /**
         **
         * Adding adapter to recycler View so that it can be displayed.
          */
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void AddImagesIntoArrayLists() {
 
-        /*
+        /**
         Here
         Company name = Categories
         */
@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
         itemForHomeImages.add(new ItemForHomeImages(R.drawable.pic2, R.drawable.womenmodel4, R.drawable.kid4, R.drawable.furniture5));
 
 
-        /*
+        /**
         **
         * created Lists of list so that we can handle multiple items for men, women, kids and furniture
 
@@ -139,8 +139,8 @@ public class MainActivity extends AppCompatActivity {
           */
         itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.menmodel4, "Men", "Men Slim Fit Casual Shirt", "hello", false));
         itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.womenmodel1, "Women", "Women Slim Fit Casual Shirt", "hello", false));
-        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.kid3, "Kids", "Women Slim Fit Casual Shirt", "hello", false));
-        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.furniture3, "Furniture", "Dummy Data about furniture", "hello", false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.kid3, "Kids", "Kids Slim Fit Casual Shirt", "hello", false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.furniture3, "Furniture", "Home and Living", "hello", false));
 
     }
 }
