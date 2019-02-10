@@ -22,7 +22,7 @@ import com.example.dealdaddy.R;
  */
 public class LoginFragment extends Fragment {
 
-    private TextView dontHaveAnAccount;
+    private TextView dontHaveAnAccount,forgetPasswordText;
     private FrameLayout parentFrameLayout;
 
 
@@ -40,6 +40,13 @@ public class LoginFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         dontHaveAnAccount = view.findViewById(R.id.dont_have_an_account_text);
         parentFrameLayout = getActivity().findViewById(R.id.RegisterFrameLayout);
+        forgetPasswordText = view.findViewById(R.id.ForgotPassword);
+        forgetPasswordText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               setFragment(new ForgetPasswordFragment());
+            }
+        });
 
         return view;
     }
