@@ -24,7 +24,8 @@ import com.example.dealdaddy.R;
  -------------------------------------
  */
 
-public class SplashScreen extends AppCompatActivity {
+public class
+SplashScreen extends AppCompatActivity {
 
     private ImageView logo;
     private TextView textView;
