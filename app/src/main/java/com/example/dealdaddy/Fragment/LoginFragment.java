@@ -22,13 +22,14 @@ import com.example.dealdaddy.R;
  */
 public class LoginFragment extends Fragment {
 
+    private TextView dontHaveAnAccount;
+    private FrameLayout parentFrameLayout;
+
+
 
     public LoginFragment() {
         // Required empty public constructor
     }
-
-    private TextView dontHaveAnAccount;
-    private FrameLayout parentFrameLayout;
 
 
 
@@ -37,7 +38,7 @@ public class LoginFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login, container, false);
-        dontHaveAnAccount = view.findViewById(R.id.signup);
+        dontHaveAnAccount = view.findViewById(R.id.dont_have_an_account_text);
         parentFrameLayout = getActivity().findViewById(R.id.RegisterFrameLayout);
 
         return view;

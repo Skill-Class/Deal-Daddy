@@ -1,11 +1,10 @@
 package com.example.dealdaddy.Activity;
 
-import android.content.Intent;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 
@@ -24,15 +23,6 @@ public class RegisterActivity extends AppCompatActivity {
 
         frameLayout=findViewById(R.id.RegisterFrameLayout);
         setFragment(new LoginFragment());
-        start=findViewById(R.id.signin);
-        start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
     public void setFragment(Fragment fragment){
