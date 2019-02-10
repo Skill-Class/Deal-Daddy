@@ -32,7 +32,7 @@ public class SignUpFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_sign_up, container, false);
-        alreadyHaveAnAccount = view.findViewById(R.id.signin);
+        alreadyHaveAnAccount = view.findViewById(R.id.DontHaveAnAccountSignIn);
         parentFrameLayout = getActivity().findViewById(R.id.RegisterFrameLayout);
         return view;
     }

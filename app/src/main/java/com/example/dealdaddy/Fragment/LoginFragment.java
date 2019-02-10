@@ -37,7 +37,7 @@ public class LoginFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_login, container, false);
-        dontHaveAnAccount = view.findViewById(R.id.signup);
+        dontHaveAnAccount = view.findViewById(R.id.DontHaveAnAccountSignup);
         parentFrameLayout = getActivity().findViewById(R.id.RegisterFrameLayout);
 
         return view;
