@@ -62,6 +62,7 @@ public class LoginFragment extends Fragment {
     private void setFragment(Fragment fragment){
 
         FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.slide_in_right,R.anim.slide_out_right);
         fragmentTransaction.replace(parentFrameLayout.getId(),fragment);
         fragmentTransaction.commit();
     }
