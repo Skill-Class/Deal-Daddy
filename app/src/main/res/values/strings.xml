@@ -16,4 +16,7 @@
     <string name="priceString">  \u20B9 11,097\n\n-\u20B9 11,097\n\n \u20B9 543\n\n Apply Coupon\n\n FREE</string>
     <string name="itemAddress"><b>Sheetal Kumar</b> (Default)\n\nFlat Number 9, Lehna Singh Market, Malka Gaj New Delhi, North Delhi - 110007, Delhi\n\nMobile : <b>9540217306</b></string>
     <string name="itemonefour">Total Mr</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

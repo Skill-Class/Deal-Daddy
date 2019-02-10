@@ -22,36 +22,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/*
+/**
       @Author - Sheetal Kumar
       -------------------------------------
-
-       In App - Main HomeScreen
-       Attached adapter - RecyclerViewAdapterForHomeScreen
-
-       Objective -
-
-       Todo - nothing
-
-       Status - complete
-
+      In App - Main HomeScreen
+      Attached adapter - RecyclerViewAdapterForHomeScreen
+      Objective -
+      Todo - nothing
+      Status - complete
       -------------------------------------
 
  */
 
 public class MainActivity extends AppCompatActivity {
 
-    private ArrayList<String> mImageUrls = new ArrayList<>();
-
-    private ImageView menImageView, womenImageView, kidsImageView, boysImageView, girlsImageView, furnitureImageView;
     private ImageView bagImage, navicon;
-
-    private CardView cardViewone;
     private TextView bottomTextView;
     private View viewLast;
 
-    //  private List<ItemsWithImage> itemsDetails;
     private List<ItemForHomeImages> itemForHomeImages;
+    private RecyclerView recyclerView;
 
     private List<ItemsWithImageArrayList> itemsWithImageArrayLists;
 
@@ -61,105 +51,55 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /**
+        **
+        * Connecting all XML views to java file using findViewById
+        */
+        AddXMLToJava();
 
-        // itemsDetails = new ArrayList<>();
-        itemForHomeImages = new ArrayList<>();
-        itemsWithImageArrayLists = new ArrayList<>();
+        /**
+        **
+        * Adding Static Data to ArrayLists
+        * Will use list according to requirements
+         */
+        AddImagesIntoArrayLists();
+
+        /**
+        **
+        * Adding Animation to Views
+        * Here using AnimationUtils
+         */
+        AddAnimationToView();
+
+        /**
+        **
+        * Adding adapter to recycler View so that it can be displayed.
+         */
+        AddAdapterAndLayoutIntoRecyclerView();
+
+
+    }
+
+    private void AddXMLToJava() {
 
         bagImage = findViewById(R.id.imageView7);
         navicon = findViewById(R.id.navicon);
         bottomTextView = findViewById(R.id.bottomTextView);
         viewLast = findViewById(R.id.viewlast);
+        recyclerView = findViewById(R.id.recyclerView);
 
+    }
 
+    private void AddAdapterAndLayoutIntoRecyclerView() {
 
+        RecyclerViewAdapterForHomeScreen myAdapter = new RecyclerViewAdapterForHomeScreen(this, itemsWithImageArrayLists);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
-        /*
-        Here
-        Company name = Categories
-         */
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(myAdapter);
+    }
 
-        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel1, R.drawable.womenmodel5, R.drawable.kid3, R.drawable.furniture1));
-        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel2, R.drawable.womenmodel2, R.drawable.kid4, R.drawable.furniture3));
-        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel3, R.drawable.womenmodel3, R.drawable.kid5, R.drawable.furniture4));
-        itemForHomeImages.add(new ItemForHomeImages(R.drawable.pic2, R.drawable.womenmodel4, R.drawable.kid4, R.drawable.furniture5));
-
-
-        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.menmodel4, "Men", "Men Slim Fit Casual Shirt", "hello", false));
-        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.womenmodel1, "Women", "Women Slim Fit Casual Shirt", "hello", false));
-        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.kid3, "Kids", "Women Slim Fit Casual Shirt", "hello", false));
-        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.furniture3, "Furniture", "Dummy Data about furniture", "hello", false));
-
-
-      /*  itemsDetails.add(new ItemsWithImage(R.drawable.menmodel4, "Men", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.womenmodel1, "Women", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.kid3, "Kids", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        itemsDetails.add(new ItemsWithImage(R.drawable.furniture3, "Furniture", "Men Slim FIt Casual Shirt",
-                "\\u20B9 1245  \\u20B9 2490 (40% Off)", false));
-
-        //menImageView = findViewById(R.id.imageView1);
-        //womenImageView = findViewById(R.id.imageView2);
-        //boysImageView = findViewById(R.id.imageView3);
-        //kidsImageView = findViewById(R.id.imageView4);
-        // girlsImageView = findViewById(R.id.imageView6);
-        //  furnitureImageView = findViewById(R.id.imageView5);
-
-
-      /*
-
-
-
-        cardViewone = findViewById(R.id.cardView1);
-        cardViewone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DetailActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
-        String menUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fmenimg.jpg?alt=media&token=2087538c-18e5-4dea-96bd-70c157020a84";
-        String girlUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fmarcus-loke-751530-unsplash.jpg?alt=media&token=407d0b24-f24a-4a33-a4f8-4dc4bb82c347";
-        String womelUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fann-danilina-671900-unsplash.jpg?alt=media&token=d8a12241-ceb1-42ca-97a8-f6d510d3aded";
-        String kidsUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fjanko-ferlic-284664-unsplash.jpg?alt=media&token=2ccc0c14-fcc2-4408-9a1a-535574fbd1c9";
-        String boysUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fsharon-garcia-498810-unsplash.jpg?alt=media&token=716005bd-9972-4053-9fd7-43687be09c22";
-        String funitureUrl = "https://firebasestorage.googleapis.com/v0/b/dealdaddy-9622a.appspot.com/o/images%2Fnathan-fertig-249917-unsplash.jpg?alt=media&token=4c210b3e-43a4-4d7e-b633-2bc57ac63d1c";
-
-        Picasso.with(this)
-                .load(menUrl)
-                .into(menImageView);
-
-        Picasso.with(this)
-                .load(womelUrl)
-                .into(womenImageView);
-
-        Picasso.with(this)
-                .load(kidsUrl)
-                .into(kidsImageView);
-
-        Picasso.with(this)
-                .load(boysUrl)
-                .into(boysImageView);
-
-        Picasso.with(this)
-                .load(girlUrl)
-                .into(girlsImageView);
-
-        Picasso.with(this)
-                .load(funitureUrl)
-                .into(furnitureImageView);
-
-                */
-
+    private void AddAnimationToView() {
 
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_to_left);
         Animation animationNav = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_to_right);
@@ -169,19 +109,38 @@ public class MainActivity extends AppCompatActivity {
         navicon.startAnimation(animationNav);
         viewLast.startAnimation(animationBottom);
         bottomTextView.startAnimation(animationBottom);
+    }
 
-        RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerView);
-        RecyclerViewAdapterForHomeScreen myAdapter = new RecyclerViewAdapterForHomeScreen(this, itemsWithImageArrayLists);
+    private void AddImagesIntoArrayLists() {
+
+        /**
+        Here
+        Company name = Categories
+        */
+
+        itemForHomeImages = new ArrayList<>();
+        itemsWithImageArrayLists = new ArrayList<>();
+
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel1, R.drawable.womenmodel5, R.drawable.kid3, R.drawable.furniture1));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel2, R.drawable.womenmodel2, R.drawable.kid4, R.drawable.furniture3));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.menmodel3, R.drawable.womenmodel3, R.drawable.kid5, R.drawable.furniture4));
+        itemForHomeImages.add(new ItemForHomeImages(R.drawable.pic2, R.drawable.womenmodel4, R.drawable.kid4, R.drawable.furniture5));
 
 
-      //  int resId = R.anim.left_to_right;
-        //LayoutAnimationController animation12 = AnimationUtils.loadLayoutAnimation(getApplicationContext(), resId);
-       // myrv.setLayoutAnimation(animation12);
+        /**
+        **
+        * created Lists of list so that we can handle multiple items for men, women, kids and furniture
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+         men :{item1,item2,item3,item4),
+         women :{item1,item2,item3,item4},
+         kids:{item1,item2,item3,item4},
+         furniture :{item1,item2,item3,item4}
 
-        myrv.setLayoutManager(layoutManager);
-        myrv.setAdapter(myAdapter);
+          */
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.menmodel4, "Men", "Men Slim Fit Casual Shirt", "hello", false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.womenmodel1, "Women", "Women Slim Fit Casual Shirt", "hello", false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.kid3, "Kids", "Kids Slim Fit Casual Shirt", "hello", false));
+        itemsWithImageArrayLists.add(new ItemsWithImageArrayList(itemForHomeImages, R.drawable.furniture3, "Furniture", "Home and Living", "hello", false));
 
     }
 }
