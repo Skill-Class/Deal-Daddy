@@ -1,5 +1,6 @@
 package com.example.dealdaddy.Activity;
 
+import android.content.Context;
 import android.content.Intent;
 /**import android.support.v4.BuildConfig;*/
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +12,9 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.dealdaddy.Fragment.LoginFragment;
 import com.example.dealdaddy.R;
 
 
@@ -79,7 +82,7 @@ public class IntroScreen extends AppCompatActivity {
 
     private void sendToMain() {
 
-        Intent intent = new Intent(IntroScreen.this, MainActivity.class);
+        Intent intent = new Intent(IntroScreen.this, RegisterActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.zoom_exit, R.anim.slide_out_right);
         finish();
