@@ -23,7 +23,6 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="50sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/textInputLayoutemail"
             app:layout_constraintStart_toStartOf="@+id/textInputLayoutemail"
             app:layout_constraintTop_toTopOf="parent" />

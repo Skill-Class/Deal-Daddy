@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/ovo"
-            android:text="DealDaddy"
+            android:text="@string/dealdaddy"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/colorPrimaryDark"
