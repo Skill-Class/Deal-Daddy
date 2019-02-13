@@ -34,7 +34,6 @@ import java.util.List;
 
  */
 
-//hello sheetal
 
 public class MainActivity extends AppCompatActivity {
 
