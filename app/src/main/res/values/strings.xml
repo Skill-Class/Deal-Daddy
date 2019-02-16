@@ -17,9 +17,23 @@
     <string name="itemAddress"><b>Sheetal Kumar</b> (Default)\n\nFlat Number 9, Lehna Singh Market, Malka Gaj New Delhi, North Delhi - 110007, Delhi\n\nMobile : <b>9540217306</b></string>
     <string name="itemonefour">Total Mr</string>
 
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="don_t_have_an_account_register">Don\'t have an account? <b>Register</b></string>
     <string name="dealdaddy">Deal<b>Daddy</b></string>
     <string name="already_have_an_account_sign_in">Already have an account? <b>Sign in</b></string>
+
+
+    <string-array name="sizes_list">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+    <string-array name="qty_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
 </resources>
