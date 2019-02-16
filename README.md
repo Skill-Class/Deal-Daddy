@@ -1,2 +1,2 @@
 # DealDaddy
-E-Commerce Android APP
+E-Commerce Android App ¦¦ Java 
