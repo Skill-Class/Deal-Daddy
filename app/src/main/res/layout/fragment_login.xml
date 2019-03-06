@@ -111,6 +111,7 @@
             android:fontFamily="@font/ovo"
             android:padding="5dp"
             android:text="Sign in"
+            android:enabled="false"
             android:textAllCaps="false"
             android:textColor="#fff"
             android:textSize="16sp"

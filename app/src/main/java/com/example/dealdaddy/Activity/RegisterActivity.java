@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import com.example.dealdaddy.Fragment.LoginFragment;
 import com.example.dealdaddy.R;
 
-public class RegisterActivity extends AppCompatActivity {
+public class    RegisterActivity extends AppCompatActivity {
 
     private FrameLayout frameLayout;
     private Button start;
