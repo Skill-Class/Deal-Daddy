@@ -1,6 +1,5 @@
 package com.example.dealdaddy.Activity;
 
-import android.content.Context;
 import android.content.Intent;
 /**import android.support.v4.BuildConfig;*/
 import android.support.v7.app.AppCompatActivity;
@@ -12,31 +11,28 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.dealdaddy.Fragment.LoginFragment;
 import com.example.dealdaddy.R;
 
 
-
-
 /**
-      @Author - Sheetal Kumar
-      -------------------------------------
-       In App - Main Intro Screen
-       Objective -
-       Todo - nothing
-       Status - complete
-      -------------------------------------
+ * @Author - Sheetal Kumar
+ * -------------------------------------
+ * In App - Main Intro Screen
+ * Objective -
+ * Todo - nothing
+ * Status - complete
+ * -------------------------------------
  */
 
 
 public class IntroScreen extends AppCompatActivity {
 
-    Button startbtn;
-    ImageView shareImageView, logoImageView;
-    TextView learnTextView;
-    CheckBox checkBox;
+    private Button startbtn;
+    private ImageView shareImageView, logoImageView;
+    private TextView learnTextView;
+    private CheckBox checkBox;
+    private TextView newProductScreenText;
 
 
     @Override
@@ -78,6 +74,21 @@ public class IntroScreen extends AppCompatActivity {
                 sendToMain();
             }
         });
+
+        /**
+         **
+         * Sending user to Upcoming product screen from this Activity after user clicks on new product text.
+         */
+        newProductScreenText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sentToNewProductScreen();
+            }
+        });
+    }
+
+    private void sentToNewProductScreen() {
+        startActivity(new Intent(IntroScreen.this, UpcomingProducts.class));
     }
 
     private void sendToMain() {
@@ -108,6 +119,7 @@ public class IntroScreen extends AppCompatActivity {
         logoImageView = findViewById(R.id.logo);
         learnTextView = findViewById(R.id.textView4);
         checkBox = findViewById(R.id.checkBox);
+        newProductScreenText =findViewById(R.id.textView4);
     }
 
     private void shareApp() {
