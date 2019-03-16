@@ -105,38 +105,42 @@ public class UpcomingProducts extends AppCompatActivity {
                 "13 Days To Go!", false));
         itemsDetails.add(new ItemsWithImage(R.drawable.furniture3,"DIVINE CASA", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
                 "14 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"WROGN", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "33 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.womenmodel1,"MODA RAPIDO", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "32 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.kid3,"ETHER", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "13 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"DIFFERENCE OF OPINION", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "23 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel2,"HIGHLANDER", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "31 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel1,"WROGN", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "30 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.menmodel3,"ETHER", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "13 Days To Go!", false));
+        itemsDetails.add(new ItemsWithImage(R.drawable.furniture3,"DIVINE CASA", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+                "14 Days To Go!", false));
 
-
-
-        /**
-         **
-         * created Lists of list so that we can handle multiple items for men, women, kids and furniture
-
-         men :{item1,item2,item3,item4),
-         women :{item1,item2,item3,item4},
-         kids:{item1,item2,item3,item4},
-         furniture :{item1,item2,item3,item4}
-
-         */
-
+        
     }
 
     private void AddAnimationToView() {
 
-        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.right_to_left);
-        Animation animationNav = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_to_right);
-        Animation animationBottom = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bottom_to_up);
+
 
 
     }
 
     private void AddAdapterAndLayoutIntoRecyclerView() {
 
-       RecyclerViewAdapterForUpcomingProducts myAdapter = new RecyclerViewAdapterForUpcomingProducts(this, itemsDetails);
+        Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.left_to_right);
+        RecyclerViewAdapterForUpcomingProducts myAdapter = new RecyclerViewAdapterForUpcomingProducts(this, itemsDetails);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         myRecycleView.setLayoutManager(layoutManager);
         myRecycleView.setAdapter(myAdapter);
+        myRecycleView.startAnimation(animation);
     }
 
 }

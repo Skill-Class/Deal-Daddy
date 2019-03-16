@@ -89,6 +89,7 @@ public class IntroScreen extends AppCompatActivity {
 
     private void sentToNewProductScreen() {
         startActivity(new Intent(IntroScreen.this, UpcomingProducts.class));
+        overridePendingTransition(R.anim.zoom_exit, R.anim.slide_out_right);
     }
 
     private void sendToMain() {
