@@ -3,6 +3,8 @@ package com.example.dealdaddy.Adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.dealdaddy.Activity.AboutItemActivity;
+import com.example.dealdaddy.Activity.UpcomingProductsDetailsAcitivity;
 import com.example.dealdaddy.Model.ItemsWithImage;
 import com.example.dealdaddy.R;
 
@@ -47,6 +50,17 @@ public class RecyclerViewAdapterForUpcomingProducts extends RecyclerView.Adapter
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
 
         holder.productImage.setImageResource(mData.get(position).getProductImage());
+
+        holder.productImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, UpcomingProductsDetailsAcitivity.class);
+                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                        (Activity) mContext, holder.productImage, ViewCompat.getTransitionName(holder.productImage));
+                mContext.startActivity(intent, options.toBundle());
+            }
+        });
+
         holder.productName.setText(mData.get(position).getCompanyName());  // productname = company name
         holder.produtTime.setText(mData.get(position).getPrize());  // prize = time
         holder.itemDetailsText.setText(mData.get(position).getItemType());  //itemtype = product details
