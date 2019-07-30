@@ -1,2 +1,11 @@
-# DealDaddy
-E-Commerce Android App ¦¦ Java 
+# DealDaddy ( Ecommerce app Android APP)
+`this project is no longer maintained`
+
+
+![](https://github.com/ksheetal/DealDaddy/blob/master/dealdaddyone.jpg)
+
+![](https://github.com/ksheetal/DealDaddy/blob/master/dealdaddytwo.jpg)
+
+
+
+App Developer - Sheetal Kumar
