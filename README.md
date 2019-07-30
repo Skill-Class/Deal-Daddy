@@ -1,4 +1,4 @@
-# DealDaddy ( Ecommerce app Android APP)
+# DealDaddy ( Ecommerce Android APP)
 `this project is no longer maintained`
 
 
@@ -8,4 +8,4 @@
 
 
 
-App Developer - Sheetal Kumar
+###App Developer - Sheetal Kumar
